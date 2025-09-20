@@ -1,0 +1,26 @@
+      strong.title {
+        color: rgb(0, 0, 0);
+      }
+      strong {
+        color: brown;
+      }
+      em.doan1 {
+        color: red;
+      }
+      em.doan2 {
+        color: blue;
+      }
+      em.doan3 {
+        color: green;
+      }
+      body {
+        text-align: center;
+        font-size: 20px;
+        background: linear-gradient(to right, #ffecd2, #fcb69f);
+      }
+      .container {
+        display: inline-block;
+        width: 30%;
+        background-color: rgb(248, 250, 226);
+        border-radius: 50px;
+      }
