@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, #f3c17c, #f59c7e);
+    text-align: center;
+}
+
+.Menu > a {
+    font-variant: small-caps;
+    color: blue;
+    text-decoration: none;
+}
+
+.Menu > a:visited {
+    color: green;
+}
+
+.Menu > a:hover {
+    color: red;
+    text-decoration: underline;
+}
