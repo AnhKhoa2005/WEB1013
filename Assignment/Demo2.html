@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hỏi & Đáp - THPT ABC</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      h1 {
+        text-align: center;
+        color: #0056b3;
+      }
+      .faq {
+        margin-bottom: 20px;
+      }
+      .faq h3 {
+        cursor: pointer;
+        color: #333;
+      }
+      .faq p {
+        display: none;
+        margin-left: 20px;
+        color: #555;
+      }
+      form {
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+      }
+      button {
+        background: #0056b3;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #003d80;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hỏi & Đáp</h1>
+
+    <div class="faq">
+      <h3>1. Hồ sơ tuyển sinh cần những giấy tờ gì?</h3>
+      <p>
+        Hồ sơ gồm: Đơn đăng ký, bản sao học bạ THCS, giấy khai sinh, sổ hộ khẩu
+        (bản photo công chứng)...
+      </p>
+    </div>
+
+    <div class="faq">
+      <h3>2. Học phí mỗi năm là bao nhiêu?</h3>
+      <p>
+        Học phí theo quy định của Sở Giáo dục, hiện tại khoảng 1.200.000đ/tháng.
+      </p>
+    </div>
+
+    <div class="faq">
+      <h3>3. Trường có những câu lạc bộ nào?</h3>
+      <p>Hiện tại có CLB Bóng đá, Bóng rổ, Võ thuật, Văn nghệ, Tin học...</p>
+    </div>
+
+    <!-- Form gửi câu hỏi -->
+    <form>
+      <h2>Gửi câu hỏi của bạn</h2>
+      <input type="text" placeholder="Họ và tên" required />
+      <input type="email" placeholder="Email" required />
+      <textarea rows="4" placeholder="Nội dung câu hỏi..." required></textarea>
+      <button type="submit">Gửi câu hỏi</button>
+    </form>
+
+    <script>
+      // Hiện/ẩn câu trả lời khi click vào câu hỏi
+      document.querySelectorAll(".faq h3").forEach((item) => {
+        item.addEventListener("click", () => {
+          let p = item.nextElementSibling;
+          p.style.display = p.style.display === "block" ? "none" : "block";
+        });
+      });
+    </script>
+  </body>
+</html>
+``

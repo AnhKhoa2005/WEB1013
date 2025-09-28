@@ -1,3 +1,4 @@
+/* Lab2_2 Bài 2 */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -13,7 +14,7 @@ body {
 }
 
 .Menu > a:visited {
-    color: green;
+    color: rgb(4, 158, 4);
 }
 
 .Menu > a:hover {
