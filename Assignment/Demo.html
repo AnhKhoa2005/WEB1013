@@ -2,133 +2,96 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang Chủ Mẫu</title>
+    <title>Menu Trường học</title>
     <style>
-      body {
+      /* Reset */
+      ul {
+        list-style: none;
         margin: 0;
-        font-family: Arial, sans-serif;
+        padding: 0;
       }
-      header {
-        background: #333333;
-        color: #fff;
-        padding: 15px;
+
+      /* MENU chính */
+      .menu {
+        background: #fff url("bg-menu.jpg") no-repeat center; /* ảnh nền menu chính */
+        border-radius: 10px; /* bo góc */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* bóng */
         display: flex;
-        justify-content: space-between;
-        align-items: center;
       }
-      header nav a {
-        color: #fff;
-        margin: 0 10px;
+
+      .menu > li {
+        position: relative; /* bắt buộc để submenu định vị tuyệt đối theo cha */
+      }
+
+      /* Menu Item */
+      .menu > li > a {
+        display: block;
+        padding: 14px 22px;
         text-decoration: none;
+        color: darkorange; /* màu cam đậm */
+        font-variant: small-caps; /* chữ hoa nhỏ */
+        line-height: 50px; /* chiều cao */
+        border-bottom: 2px solid #ff0606; /* đường kẻ dưới */
       }
-      .hero {
-        text-align: center;
-        padding: 100px 20px;
-        background: #f4f4f4;
+
+      /* Hover Item */
+      .menu > li > a:hover {
+        background-color: darkorange;
+        color: red; /* màu đỏ */
+        font-weight: bold; /* in đậm */
       }
-      .hero h1 {
-        font-size: 2.5em;
+
+      /* MENU con (2 cấp) */
+      .menu li ul {
+        display: none; /* ẩn mặc định */
+        position: absolute;
+        top: 100%; /* xổ xuống dưới cha */
+        left: 0;
+        background: #fff url("bg-submenu.jpg") no-repeat center;
+        min-width: 180px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        z-index: 1000; /* đảm bảo nổi lên trên */
       }
-      .section {
-        padding: 60px 20px;
-        text-align: center;
+
+      .menu li ul li {
+        position: relative;
       }
-      .services {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
+
+      .menu li ul li a {
+        display: block;
+        padding: 10px;
+        color: darkorange;
+        font-variant: small-caps;
+        border-bottom: 1px solid #ddd;
       }
-      .card {
-        background: #fff;
-        padding: 20px;
-        border: 1px solid #ddd;
-        width: 250px;
+
+      .menu li ul li a:hover {
+        background: url("bg-sub-hover.jpg") no-repeat center;
+        color: red;
+        font-weight: bold;
       }
-      footer {
-        background: #222;
-        color: #bbb;
-        padding: 30px;
-        text-align: center;
+
+      /* Hover vào li cha thì hiện submenu */
+      .menu li:hover > ul {
+        display: block;
       }
     </style>
   </head>
   <body>
-    <header>
-      <div class="logo">LOGO</div>
-      <nav>
-        <a href="#">Trang chủ</a>
+    <ul class="menu">
+      <li><a href="#">Trang chủ</a></li>
+      <li>
         <a href="#">Giới thiệu</a>
-        <a href="#">Dịch vụ</a>
-        <a href="#">Liên hệ</a>
-      </nav>
-      <a
-        href="#"
-        style="
-          color: #fff;
-          background: #0077ff;
-          padding: 8px 15px;
-          border-radius: 5px;
-        "
-        >Đăng ký</a
-      >
-    </header>
-
-    <section class="hero">
-      <h1>Chào mừng đến với Website của tôi</h1>
-      <p>Giải pháp sáng tạo cho doanh nghiệp của bạn</p>
-      <a
-        href="#"
-        style="
-          background: #0099ff;
-          color: #fff;
-          padding: 10px 20px;
-          border-radius: 5px;
-        "
-        >Khám phá ngay</a
-      >
-    </section>
-
-    <section class="section">
-      <h2>Về chúng tôi</h2>
-      <p>
-        Chúng tôi cung cấp dịch vụ thiết kế và giải pháp công nghệ hiện đại,
-        giúp bạn phát triển nhanh chóng.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Dịch vụ nổi bật</h2>
-      <div class="services">
-        <div class="card">Dịch vụ 1</div>
-        <div class="card">Dịch vụ 2</div>
-        <div class="card">Dịch vụ 3</div>
-      </div>
-    </section>
-
-    <section class="section" style="background: #f9f9f9">
-      <h2>Khách hàng nói gì</h2>
-      <p>"Dịch vụ tuyệt vời, tôi rất hài lòng!" – Khách A</p>
-      <p>"Hỗ trợ nhanh chóng và chuyên nghiệp." – Khách B</p>
-    </section>
-
-    <section class="section" style="background: #008cff; color: #fff">
-      <h2>Sẵn sàng trải nghiệm?</h2>
-      <a
-        href="#"
-        style="
-          background: #fff;
-          color: #ff6600;
-          padding: 10px 20px;
-          border-radius: 5px;
-        "
-        >Đăng ký ngay</a
-      >
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Website của tôi | Liên hệ: email@example.com</p>
-      <p>Facebook | Zalo | Instagram</p>
-    </footer>
+        <ul>
+          <li><a href="#">Tiểu sử</a></li>
+          <li><a href="#">Đoàn Thanh Niên</a></li>
+          <li><a href="#">Ban Giám Hiệu</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Tin tức</a></li>
+      <li><a href="#">Hoạt động</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
   </body>
 </html>
