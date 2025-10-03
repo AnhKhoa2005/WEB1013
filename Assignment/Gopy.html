@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THPT Lương Thế Vinh</title>
+    <link rel="stylesheet" href="Css/Styles1.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hmenu">
+        <div class="logo">
+          <a href="Index.html">
+            <img src="Images/LogoTruong.jpg" alt="logo" />
+            <h1>Trường THPT Lương Thế Vinh</h1></a
+          >
+        </div>
+        <nav>
+          <ul>
+            <li><a href="Index.html">Trang Chủ</a></li>
+            <li>
+              <a href="#">Giới thiệu ▾</a>
+              <ul>
+                <li><a href="#">Tiểu sử Lương Thế Vinh</a></li>
+                <li><a href="#">Giới thiệu về Đoàn Thanh niên trường</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Cơ cấu tổ chức ▾</a>
+              <ul>
+                <li><a href="#">Ban giám hiệu</a></li>
+                <li><a href="#">Chi bộ đảng</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Tin tức ▾</a>
+              <ul>
+                <li><a href="#">Tin tức hoạt động</a></li>
+                <li><a href="#">Hoạt động giáo dục</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Điều hành ▾</a>
+              <ul>
+                <li><a href="#">Thời khoá biểu</a></li>
+                <li><a href="#">Lịch thi, kiểm tra</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Góp ý</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- banner trường -->
+    <div class="banner-slideshow">
+      <div class="slides">
+        <img src="Images/AnhBiaTruong.jpg" alt="ảnh 1" />
+        <img src="Images/Hoatdongngoaikhoa1.jpg" alt="ảnh 2" />
+        <img src="Images/Hoatdongngoaikhoa2.jpg" alt="ảnh 3" />
+        <img src="Images/Hoatdongngoaikhoa3.jpg" alt="ảnh 4" />
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main>
+      <article>
+        <div>
+          <h1>📝 Góp ý về nhà trường</h1>
+          <p>
+            Chúng tôi rất trân trọng mọi ý kiến đóng góp từ học sinh, phụ huynh
+            và giáo viên để nhà trường ngày càng phát triển. Vui lòng điền đầy
+            đủ thông tin bên dưới:
+          </p>
+
+          <form action="#" method="post" class="feedback-form">
+            <!-- Họ và tên -->
+            <div class="form-group">
+              <label for="fullname">👤 Họ và tên:</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Nhập họ và tên"
+                required
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">📧 Email liên hệ:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Nhập email"
+                required
+              />
+            </div>
+
+            <!-- Số điện thoại -->
+            <div class="form-group">
+              <label for="phone">📱 Số điện thoại:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Nhập số điện thoại"
+              />
+            </div>
+
+            <!-- Bạn là -->
+            <div class="form-group">
+              <label for="role">🎓 Bạn là:</label>
+              <select id="role" name="role">
+                <option value="hoc_sinh">Học sinh</option>
+                <option value="phu_huynh">Phụ huynh</option>
+                <option value="giao_vien">Giáo viên</option>
+                <option value="khac">Khác</option>
+              </select>
+            </div>
+
+            <!-- Đánh giá -->
+            <div class="form-group">
+              <label>⭐ Đánh giá chung về nhà trường:</label>
+              <div class="star-rating">
+                <input type="radio" name="rating" id="star5" value="5" /><label
+                  for="star5"
+                  >5</label
+                >
+                <input type="radio" name="rating" id="star4" value="4" /><label
+                  for="star4"
+                  >4</label
+                >
+                <input type="radio" name="rating" id="star3" value="3" /><label
+                  for="star3"
+                  >3</label
+                >
+                <input type="radio" name="rating" id="star2" value="2" /><label
+                  for="star2"
+                  >2</label
+                >
+                <input type="radio" name="rating" id="star1" value="1" /><label
+                  for="star1"
+                  >1</label
+                >
+              </div>
+            </div>
+
+            <!-- Lĩnh vực góp ý -->
+            <div class="form-group">
+              <label>📌 Lĩnh vực góp ý:</label>
+              <div class="checkbox-group">
+                <label
+                  ><input type="checkbox" name="topics" value="csgd" /> Chất
+                  lượng giáo dục</label
+                >
+                <label
+                  ><input type="checkbox" name="topics" value="co-so" /> Cơ sở
+                  vật chất</label
+                >
+                <label
+                  ><input type="checkbox" name="topics" value="hoat-dong" />
+                  Hoạt động ngoại khóa</label
+                >
+                <label
+                  ><input type="checkbox" name="topics" value="khac" />
+                  Khác</label
+                >
+              </div>
+            </div>
+
+            <!-- Ý kiến chi tiết -->
+            <div class="form-group">
+              <label for="feedback">✍️ Ý kiến chi tiết:</label>
+              <textarea
+                id="feedback"
+                name="feedback"
+                placeholder="Nhập ý kiến..."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Nhận phản hồi -->
+            <div class="form-group">
+              <label>🔔 Muốn nhận phản hồi qua:</label>
+              <div class="checkbox-group">
+                <label
+                  ><input type="checkbox" name="reply" value="email" />
+                  Email</label
+                >
+                <label
+                  ><input type="checkbox" name="reply" value="phone" /> Số điện
+                  thoại</label
+                >
+              </div>
+            </div>
+
+            <!-- Nút gửi -->
+            <div class="form-group">
+              <button type="submit">Gửi góp ý</button>
+            </div>
+          </form>
+        </div>
+      </article>
+
+      <aside>
+        <!-- Thời khoá biểu -->
+        <div>
+          <h2>📅Lịch học</h2>
+          <ul>
+            <li><a href="#">Thời khóa biểu khối lớp - buổi sáng</a></li>
+            <li><a href="#">Thời khóa biểu khối lớp - buổi chiều</a></li>
+            <li><a href="#">Thời khóa biểu khối lớp - các lớp 2b</a></li>
+            <li><a href="#">Thời khóa biểu giáo viên - buổi sáng</a></li>
+            <li><a href="#">Thời khóa biểu giáo viên - buổi chiều</a></li>
+          </ul>
+        </div>
+        <!-- Danh bạ điện thoại -->
+        <div>
+          <h2>📞Danh bạ điện thoại</h2>
+          <ul>
+            <li>Hiệu trưởng: <a href="tel:0935308369">0935308369</a></li>
+            <li>Phó Hiệu trưởng: <a href="tel:0935261640">0935261640</a></li>
+            <li>Phó Hiệu trưởng: <a href="tel:0935761278">0935761278</a></li>
+          </ul>
+        </div>
+      </aside>
+      <!-- Liên hệ nhanh -->
+      <div class="lienhenhanh">
+        <a
+          href="https://www.facebook.com/profile.php?id=100054346279396"
+          target="_blank"
+        >
+          <img src="Images/Facebook-Icon.png" alt="icon" />
+        </a>
+        <a href="tel:0935308369" target="_blank">
+          <img src="Images/Phone-Icon.png" alt="icon" />
+        </a>
+      </div>
+    </main>
+    <footer>
+      Copyright © 2011 - 2025 Trường Trung Học Phổ Thông Lương Thế Vinh.
+      <br />
+      Địa chỉ:<a
+        href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+THPT+L%C6%B0%C6%A1ng+Th%E1%BA%BF+Vinh/@15.9187505,108.2427154,14z/data=!4m15!1m8!3m7!1s0x31420fdddc089489:0xb897d13ea60c16d1!2zxJBp4buHbiBOYW0gVHJ1bmcsIMSQaeG7h24gQsOgbiwgUXXhuqNuZyBOYW0sIFZp4buHdCBOYW0!3b1!8m2!3d15.9157159!4d108.2703751!16s%2Fg%2F113qb9dc3!3m5!1s0x31420fdb428322d3:0x7e8faa4f9f4eaa0!8m2!3d15.9144187!4d108.2684451!16s%2Fg%2F1tfw9zl1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDkyMy4wIKXMDSoASAFQAw%3D%3D"
+        target="_blank"
+      >
+        Phường Điện Nam Trung - Thị xã Điện Bàn - Tỉnh Quảng Nam</a
+      >
+      <br />
+      Điện thoại <a href="tel:05103843033" target="_blank">05103.843033</a> -
+      <a href="tel:05103946279" target="_blank">05103.946279</a>
+      <br />
+      Email:
+      <a href="mailto:levanngat@gmail.com" target="_blank"
+        >levanngat@gmail.com</a
+      >
+    </footer>
+  </body>
+</html>
