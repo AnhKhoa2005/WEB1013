@@ -1,0 +1,54 @@
+/* Lab4_1 bài 1 */
+.vmenu {
+  padding: 0;
+  margin: 5px;
+  list-style: none; /* ẩn bullet mặc định */
+  border-radius: 5px;
+  box-shadow: 0 0 2px gray;
+  width: 250px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* mỗi item */
+.vmenu li {
+  border-bottom: 1px dotted orangered;
+  padding: 8px 5px 8px 30px;
+  font-variant: small-caps;
+  font-size: larger;
+  color: orangered;
+  position: relative;
+  cursor: pointer;
+}
+
+/* thêm bullet bằng ::before */
+.vmenu li::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: url('../Images/bullet_hover.gif') no-repeat center center;
+  background-size: contain;
+}
+
+/* hiệu ứng khi rê chuột */
+.vmenu li:hover {
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  border-bottom: 1px dotted white;
+}
+
+/* đổi bullet khi hover */
+.vmenu li:hover::before {
+  background-image: url('../Images/bullet.png'); /* mũi tên hoặc bullet sáng */
+}
+
+/* bỏ gạch chân cho <a> */
+.vmenu a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
