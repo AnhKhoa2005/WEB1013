@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Đăng Ký Đơn Giản</title>
+    <!-- Liên kết đến file CSS -->
+    <link rel="stylesheet" href="../Css/Styles3.css" />
+  </head>
+  <body>
+    <!-- Container chính cho form -->
+    <div class="form-container">
+      <form class="register-form">
+        <!-- 1. Nhóm Họ và tên -->
+        <div class="form-group">
+          <label for="fullname">HỌ VÀ TÊN:</label>
+          <input
+            type="text"
+            id="fullname"
+            class="form-control"
+            name="fullname"
+            tabindex="1"
+            placeholder="Nhập họ và tên"
+          />
+        </div>
+
+        <!-- 2. Nhóm Quốc tịch (Readonly) -->
+        <div class="form-group">
+          <label for="country">QUỐC TỊCH:</label>
+          <input
+            type="text"
+            id="country"
+            class="form-control"
+            name="country"
+            value="Việt Nam"
+            readonly
+            title="Trường này chỉ đọc"
+          />
+        </div>
+
+        <!-- 3. Nhóm Ghi chú -->
+        <div class="form-group">
+          <label for="note">GHI CHÚ:</label>
+          <textarea
+            id="note"
+            class="form-control"
+            name="note"
+            rows="5"
+            tabindex="2"
+            placeholder="Nhập ghi chú"
+          ></textarea>
+        </div>
+
+        <!-- 4. Nhóm Các nút (Thêm, Sửa, Xóa) -->
+        <div class="button-group">
+          <!-- Nút Thêm (tabindex="3") -->
+          <button type="button" class="form-button" tabindex="3">Thêm</button>
+
+          <!-- Nút Sửa (tabindex="4") -->
+          <button type="button" class="form-button" tabindex="4">Sửa</button>
+
+          <!-- Nút Xóa (disabled) -->
+          <button type="button" class="form-button" disabled>Xóa</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

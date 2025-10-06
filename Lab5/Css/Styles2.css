@@ -1,0 +1,135 @@
+/* Lab5_1 bài 2 */
+/* Định dạng chung cho trang */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Kiểu dáng cho form đăng ký */
+.register-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px; /* Bo góc mềm mại */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Đổ bóng sâu hơn */
+    width: 100%;
+    max-width: 550px;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+}
+
+/* Nhóm các trường input để dễ quản lý */
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* Kiểu dáng cho label */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Kiểu dáng cho tất cả các trường input, select và textarea */
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+/* Hiệu ứng khi focus */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.15); /* Đổ bóng khi focus */
+    background-color: #fff;
+    outline: none;
+}
+
+/* Style cho các nút radio và checkbox */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: #007bff; /* Tùy chỉnh màu checkbox/radio mặc định */
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Style cho textarea */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Style cho các nút */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Nút Đăng ký */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.25);
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+/* Nút Nhập lại */
+button[type="reset"] {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+button[type="reset"]:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}

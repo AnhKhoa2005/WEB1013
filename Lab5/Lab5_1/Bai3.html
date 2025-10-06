@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Liên Hệ Thân Thiện</title>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../Css/Contact.css" />
+  </head>
+  <body>
+    <div class="contact-container">
+      <form class="contact-form" id="contactForm">
+        <h2>Liên hệ với Nhà Trường</h2>
+
+        <div class="input-group">
+          <i class="fa fa-user"></i>
+          <input type="text" name="name" placeholder="Họ và tên" required />
+        </div>
+
+        <div class="input-group">
+          <i class="fa fa-envelope"></i>
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+
+        <div class="input-group">
+          <i class="fa fa-phone"></i>
+          <input type="tel" name="phone" placeholder="Số điện thoại" required />
+        </div>
+
+        <div class="input-group">
+          <i class="fa fa-pencil-alt"></i>
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Nội dung liên hệ"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">
+          <i class="fa fa-paper-plane"></i> Gửi liên hệ
+        </button>
+
+        <p class="form-feedback" id="formFeedback"></p>
+      </form>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>

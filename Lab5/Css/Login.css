@@ -1,0 +1,105 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe); /* Gradient xanh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container chính */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background-color: #e0f7fa; /* nền sáng xanh */
+  border-radius: 25px; /* bo góc đẹp */
+  box-shadow: 0 12px 30px rgba(0, 128, 128, 0.25); /* bóng nhẹ */
+  transition: 0.3s ease;
+}
+
+/* Form */
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #006064;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #0097a7; /* icon màu xanh */
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 14px 14px 45px; /* padding đủ cho icon */
+  border: 1px solid #b2ebf2;
+  border-radius: 15px;
+  font-size: 16px;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+
+.input-group input:focus {
+  border-color: #00acc1;
+  box-shadow: 0 0 10px rgba(0, 172, 193, 0.4);
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #00acc1;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 172, 193, 0.3);
+}
+
+.login-form button:hover {
+  background-color: #0097a7;
+  transform: translateY(-2px);
+}
+
+.login-form button i {
+  margin-right: 10px;
+}
+
+.login-form .forgot {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.login-form .forgot a {
+  text-decoration: none;
+  color: #007c91;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.login-form .forgot a:hover {
+  text-decoration: underline;
+}

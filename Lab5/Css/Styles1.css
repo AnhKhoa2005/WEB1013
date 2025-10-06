@@ -1,0 +1,99 @@
+/* Lab5_1 bài 1 */
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #FFA726, #FFB74D);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container chính */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #fff3e0;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(255, 140, 0, 0.3);
+}
+
+/* Form */
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #e65100;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #ff9800;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #ffcc80;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #fb8c00;
+  box-shadow: 0 0 8px rgba(255, 140, 0, 0.3);
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #fb8c00;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #ff9800;
+  transform: translateY(-2px);
+}
+
+.login-form button i {
+  margin-right: 8px;
+}
+
+.login-form .forgot {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-form .forgot a {
+  text-decoration: none;
+  color: #fb8c00;
+  transition: 0.3s;
+}
+
+.login-form .forgot a:hover {
+  text-decoration: underline;
+}
