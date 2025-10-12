@@ -1,0 +1,98 @@
+/* --- CÀI ĐẶT TỔNG THỂ --- */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #000; /* Nền đen tuyệt đối để video nổi bật */
+    overflow: hidden; /* Quan trọng: Loại bỏ hoàn toàn thanh cuộn */
+}
+
+/* --- KHUNG VIDEO PLAYER --- */
+/* Thiết lập iframe để chiếm trọn 100% không gian màn hình */
+.fullscreen-video-player {
+    position: fixed; /* Giữ video cố định tại một vị trí */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 1; /* Đặt video ở lớp dưới cùng */
+}
+
+/* --- DANH SÁCH ẢNH ĐẠI DIỆN --- */
+/* Container cho các ảnh, đặt ở dưới cùng và trên lớp video */
+.video-playlist {
+    position: fixed; /* Cố định vị trí so với màn hình */
+    bottom: 30px; /* Khoảng cách từ đáy màn hình */
+    left: 50%;
+    transform: translateX(-50%); /* Căn giữa container theo chiều ngang */
+    z-index: 2; /* Đảm bảo các ảnh nằm trên video */
+    
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa các ảnh */
+    
+    /* Hiệu ứng nền mờ kính để dễ đọc trên nền video */
+    background-color: rgba(20, 20, 20, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Hỗ trợ cho Safari */
+    
+    padding: 15px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    
+    transition: all 0.4s ease;
+}
+
+/* Khi di chuột vào khu vực danh sách, làm nó rõ hơn */
+.video-playlist:hover {
+    background-color: rgba(20, 20, 20, 0.8);
+    bottom: 35px; /* Nhô lên một chút */
+}
+
+/* --- TỪNG ẢNH ĐẠI DIỆN --- */
+.thumbnail-link {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.thumbnail-img {
+    display: block;
+    width: 160px; /* Kích thước ảnh nhỏ gọn */
+    height: 90px;
+    object-fit: cover;
+}
+
+/* Hiệu ứng khi di chuột vào từng ảnh */
+.thumbnail-link:hover {
+    transform: scale(1.1); /* Phóng to ảnh */
+    border-color: #0099ff; /* Hiện viền xanh dương nổi bật */
+    box-shadow: 0 0 20px rgba(0, 153, 255, 0.7);
+}
+
+/* Lớp phủ tiêu đề trên ảnh */
+.thumbnail-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 5px 5px;
+    
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    
+    opacity: 0; /* Mặc định ẩn tiêu đề */
+    transition: opacity 0.3s ease;
+}
+
+/* Hiện tiêu đề khi di chuột vào ảnh */
+.thumbnail-link:hover .thumbnail-title {
+    opacity: 1;
+}

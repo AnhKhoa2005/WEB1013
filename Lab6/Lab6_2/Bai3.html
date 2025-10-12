@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập Hiển Thị Flash</title>
+    <link rel="stylesheet" href="../Css/Styles5.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hiển Thị Flash</h1>
+
+      <div class="warning">
+        <strong>Giải thích:</strong> Do Adobe Flash đã ngừng hoạt động, trang
+        này sử dụng trình giả lập <strong>Ruffle</strong> để tái hiện nội dung
+        Flash, trong khi vẫn giữ nguyên cấu trúc thẻ
+        <strong>&lt;embed&gt;</strong> và <strong>&lt;object&gt;</strong> theo
+        yêu cầu đề bài.
+      </div>
+
+      <!-- Flash thứ nhất sử dụng <embed> -->
+      <div class="flash-wrapper">
+        <h2>1. Sử dụng thẻ &lt;embed&gt;</h2>
+        <embed
+          src="http://www.leconcombre.com/board/dl/swf/clock3.swf"
+          type="application/x-shockwave-flash"
+        />
+      </div>
+
+      <!-- Flash thứ hai sử dụng <object> -->
+      <div class="flash-wrapper">
+        <h2>2. Sử dụng thẻ &lt;object&gt;</h2>
+        <object
+          data="http://www.leconcombre.com/board/dl/swf/newyear.swf"
+          type="application/x-shockwave-flash"
+        >
+          <param
+            name="movie"
+            value="http://www.leconcombre.com/board/dl/swf/newyear.swf"
+          />
+        </object>
+      </div>
+    </div>
+
+    <!-- Script của Ruffle giúp chạy được Flash -->
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  </body>
+</html>

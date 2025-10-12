@@ -1,0 +1,120 @@
+/* ---- CÀI ĐẶT CHUNG ---- */
+body {
+    /* Sử dụng font Be Vietnam Pro cho đẹp */
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.schedule-container {
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* ---- KHUNG BỌC BẢNG ---- */
+.table-wrapper {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden; /* Cần thiết để bo góc cho bảng */
+}
+
+/* ---- BẢNG ---- */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Gộp đường viền, không có khoảng cách giữa các ô */
+}
+
+th, td {
+    padding: 18px 20px;
+    vertical-align: middle;
+}
+
+/* ---- TIÊU ĐỀ BẢNG (THEAD) ---- */
+thead .main-header th {
+    background-color: #6a994e; /* Màu xanh lá cây đậm */
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+thead .sub-header th {
+    background-color: #a7c957; /* Màu xanh lá cây nhạt */
+    color: #386641;
+    font-weight: 500;
+    padding: 12px;
+}
+
+/* ---- THÂN BẢNG (TBODY) ---- */
+tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-bottom: 1px solid #e0e6ed;
+}
+
+tbody tr:last-child {
+    border-bottom: none; /* Bỏ viền cho hàng cuối */
+}
+
+/* Hiệu ứng khi di chuột vào hàng */
+tbody tr:hover {
+    background-color: #f0f4f8;
+    transform: scale(1.02); /* Phóng to nhẹ hàng */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ---- CÁC Ô DỮ LIỆU (TD) ---- */
+.time-cell {
+    font-weight: 500;
+    color: #555;
+    white-space: nowrap; /* Không xuống dòng */
+}
+
+.team-cell {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Định dạng riêng cho đội Việt Nam */
+.team-vietnam {
+    color: #e63946; /* Màu đỏ nổi bật */
+    font-weight: 700;
+}
+
+/* Định dạng riêng cho kênh truyền hình */
+.channel-cell {
+    color: #e63946;
+    font-weight: 700;
+}
+
+/* ---- FOOTER ---- */
+.footer-credit {
+    margin-top: 30px;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+/* ---- RESPONSIVE CHO MÀN HÌNH NHỎ ---- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    th, td {
+        padding: 12px 8px;
+        font-size: 0.9em;
+    }
+}

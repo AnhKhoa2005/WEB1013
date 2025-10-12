@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trình Chiếu Video Toàn Màn Hình</title>
+    <!-- Liên kết đến tệp CSS riêng -->
+    <link rel="stylesheet" href="../Css/Styles4.css" />
+  </head>
+  <body>
+    <!-- Iframe hiển thị video, chiếm toàn bộ màn hình -->
+    <iframe
+      name="khung_video"
+      src="video1.html"
+      class="fullscreen-video-player"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+
+    <!-- Danh sách các ảnh đại diện, nằm trên video -->
+    <div class="video-playlist">
+      <a href="video1.html" target="khung_video" class="thumbnail-link">
+        <img
+          src="../Images/Phongcanh.png"
+          alt="Ảnh đại diện 1"
+          class="thumbnail-img"
+        />
+        <span class="thumbnail-title">Phong Cảnh</span>
+      </a>
+      <a href="video2.html" target="khung_video" class="thumbnail-link">
+        <img
+          src="../Images/Thanhpho.png"
+          alt="Ảnh đại diện 2"
+          class="thumbnail-img"
+        />
+        <span class="thumbnail-title">Thành Phố</span>
+      </a>
+      <a href="video3.html" target="khung_video" class="thumbnail-link">
+        <img
+          src="../Images/Bobien.png"
+          alt="Ảnh đại diện 3"
+          class="thumbnail-img"
+        />
+        <span class="thumbnail-title">Bờ Biển</span>
+      </a>
+    </div>
+  </body>
+</html>
