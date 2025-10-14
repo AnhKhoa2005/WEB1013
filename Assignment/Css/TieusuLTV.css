@@ -126,6 +126,14 @@
               var(--gradient-primary) border-box;
 }
 
+/* ========== SỬA LỖI ẢNH CHÂN DUNG TRÀN KHUNG ========== */
+.portrait-frame img {
+  width: 100%;
+  height: 500px; /* Chiều cao cố định giống .image-placeholder--portrait cũ */
+  object-fit: cover; /* QUAN TRỌNG: Lấp đầy khung, tự cắt phần thừa */
+  display: block; /* Đảm bảo ảnh là block element */
+}
+
 .image-placeholder--portrait {
   height: 500px;
 }

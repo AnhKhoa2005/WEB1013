@@ -148,6 +148,13 @@
   overflow: hidden;
 }
 
+/* ========== SỬA LỖI VIDEO HERO TRÀN KHUNG ========== */
+.vision-hero__video {
+  width: 100%;
+  height: 100%; /* Video sẽ cao bằng 100% thẻ cha (.vision-hero__image) */
+  object-fit: cover; /* QUAN TRỌNG: Lấp đầy khung, tự cắt phần thừa */
+  display: block;
+}
 /* Image Placeholder */
 .image-placeholder {
   width: 100%;

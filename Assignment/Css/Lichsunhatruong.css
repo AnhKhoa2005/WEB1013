@@ -203,8 +203,18 @@
   margin-bottom: var(--spacing-xl);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  height: 300px;
+  height: 500px;
   box-shadow: var(--shadow-md);
+}
+
+/* ========== SỬA LỖI ẢNH TIMELINE TRÀN KHUNG ========== */
+.timeline-detail__image img {
+  width: 100%;
+  height: 100%; /* Tự động co giãn theo chiều cao 300px của thẻ cha */
+  object-fit: cover; /* Lấp đầy khung, tự cắt phần thừa */
+  border-radius: var(
+    --radius-lg
+  ); /* Bo góc ảnh giống như khung placeholder cũ */
 }
 
 /* Image Placeholder */
