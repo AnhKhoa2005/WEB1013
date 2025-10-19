@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+:root {
+  --background-color: #0f172a; /* Nền tối sang trọng */
+  --card-background: rgba(255, 255, 255, 0.1);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --accent-color-1: #2563eb;
+  --accent-color-2: #db2777;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* --- Thiết lập chung & Nền động --- */
+body {
+  margin: 0;
+  /* Bỏ padding cũ, để container tự xử lý */
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  /* XÓA: align-items: center; -> Dòng này làm nội dung bị đẩy lên trên */
+  position: relative;
+  /* SỬA: overflow: hidden; thành overflow-x: hidden; để cho phép cuộn dọc */
+  overflow-x: hidden; 
+}
+
+/* --- Các hình khối trang trí ở nền --- */
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(100px); /* Hiệu ứng blur cực mạnh */
+}
+
+body::before {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, var(--accent-color-1), transparent 60%);
+  top: -10%;
+  left: -10%;
+  animation: float 15s infinite ease-in-out;
+}
+
+body::after {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--accent-color-2), transparent 60%);
+  bottom: -15%;
+  right: -15%;
+  animation: float 20s infinite ease-in-out alternate;
+}
+
+/* --- Animation cho các hình khối --- */
+@keyframes float {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(40px, 80px); }
+  100% { transform: translate(0, 0); }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  /* THÊM DÒNG NÀY: */
+  padding: 4rem 2rem; /* Tạo khoảng trống trên-dưới và trái-phải */
+  z-index: 1;
+}
+
+/* --- Cột bên trái: Tiêu đề --- */
+.info-section {
+  text-align: left;
+}
+
+.title {
+  font-size: 3.5rem; /* 56px */
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  background: linear-gradient(90deg, var(--text-primary), var(--text-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1s ease-out;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-top: 1rem;
+  max-width: 400px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Cột bên phải: Card Social --- */
+.social-card {
+  background: var(--card-background);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 var(--shadow-color);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+
+  /* --- THÊM 3 DÒNG NÀY ĐỂ CĂN GIỮA --- */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-card:hover {
+  transform: scale(1.02);
+}
+
+.social-card iframe {
+  width: 100% !important;
+  max-width: 500px;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.social-buttons {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* --- Responsive cho điện thoại --- */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr; /* Chuyển thành 1 cột */
+    text-align: center;
+    gap: 3rem;
+  }
+  .info-section {
+    text-align: center;
+  }
+  .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

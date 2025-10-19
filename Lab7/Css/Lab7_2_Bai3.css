@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
+
+:root {
+  --background-main: #111827; /* Dark background */
+  --card-background: #1f2937;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --accent-primary: #8b5cf6; /* A vibrant purple */
+  --border-color: rgba(255, 255, 255, 0.1);
+  --shadow-color: rgba(139, 92, 246, 0.2);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--background-main);
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Bento Grid Layout --- */
+.bento-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* --- General Bento Box Styling --- */
+.bento-box {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden; /* For pseudo-elements */
+}
+
+/* The "new & lạ" part: Hover effect */
+.bento-box:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+/* --- Specific Box Layouts --- */
+.main-card {
+  grid-column: span 2;
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.faq-card {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.contact-card {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/* --- Content Styling --- */
+.bento-box h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 1rem 0;
+}
+
+.bento-box h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  margin-top: 0;
+}
+
+.bento-box p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.main-card p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.faq-card ul {
+  list-style: none;
+  padding-left: 0;
+  color: var(--text-secondary);
+}
+
+.faq-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.faq-card li:last-child {
+  border-bottom: none;
+}
+
+.contact-card p {
+  font-size: 1rem;
+}
+
+/* --- Icons --- */
+.material-symbols-outlined {
+  color: var(--accent-primary);
+  font-size: 2.5rem;
+}
+.icon-large {
+  font-size: 4rem;
+}
+
+/* --- Responsive for Mobile --- */
+@media (max-width: 900px) {
+  body {
+    padding: 1rem;
+  }
+  .bento-container {
+    grid-template-columns: 1fr; /* Stack all boxes */
+    grid-template-rows: auto;
+  }
+  .main-card, .faq-card, .contact-card {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+/* --- Animation --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

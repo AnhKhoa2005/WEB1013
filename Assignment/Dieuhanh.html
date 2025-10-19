@@ -56,7 +56,7 @@
             <div class="container">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="Index.html" class="nav__link">🏠 Trang Chủ</a>
+                  <a href="index.html" class="nav__link">🏠 Trang Chủ</a>
                 </li>
                 <li class="nav__item has-submenu">
                   <a href="Gioithieu.html" class="nav__link">ℹ️ Giới thiệu</a>
@@ -111,13 +111,18 @@
                         >🎓 Hoạt động giáo dục</a
                       >
                     </li>
+                    <li class="submenu__item">
+                      <a href="HoatdongMXH.html" class="submenu__link"
+                        >📱 Hoạt động MXH</a
+                      >
+                    </li>
                   </ul>
                 </li>
                 <li class="nav__item has-submenu active">
                   <a href="Dieuhanh.html" class="nav__link">⚙️ Điều hành</a>
                   <ul class="submenu">
                     <li class="submenu__item">
-                      <a href="ThoiKhoaBieu.html" class="submenu__link"
+                      <a href="Thoikhoabieu.html" class="submenu__link"
                         >📅 Thời khóa biểu</a
                       >
                     </li>
@@ -145,7 +150,7 @@
           <div class="container">
             <h1 class="page-banner__title">Điều Hành</h1>
             <div class="breadcrumb">
-              <a href="Index.html" class="breadcrumb__item">Trang chủ</a>
+              <a href="index.html" class="breadcrumb__item">Trang chủ</a>
               <span class="breadcrumb__separator">/</span>
               <span class="breadcrumb__item breadcrumb__item--active"
                 >Điều hành</span
@@ -175,7 +180,7 @@
           <section class="quick-access">
             <h2 class="section-title">🔗 Truy Cập Nhanh</h2>
             <div class="access-grid">
-              <a href="ThoiKhoaBieu.html" class="access-card">
+              <a href="Thoikhoabieu.html" class="access-card">
                 <div class="access-icon">📅</div>
                 <h3 class="access-title">Thời Khóa Biểu</h3>
                 <p class="access-desc">
@@ -190,22 +195,6 @@
                 <p class="access-desc">
                   Tra cứu lịch thi, kiểm tra định kỳ và cuối kỳ
                 </p>
-                <div class="access-arrow">→</div>
-              </a>
-
-              <a href="#" class="access-card">
-                <div class="access-icon">📊</div>
-                <h3 class="access-title">Tra Cứu Điểm</h3>
-                <p class="access-desc">
-                  Xem kết quả học tập, điểm số các môn học
-                </p>
-                <div class="access-arrow">→</div>
-              </a>
-
-              <a href="#" class="access-card">
-                <div class="access-icon">📋</div>
-                <h3 class="access-title">Đăng Ký Môn Học</h3>
-                <p class="access-desc">Đăng ký tổ hợp môn học, môn tự chọn</p>
                 <div class="access-arrow">→</div>
               </a>
             </div>
@@ -597,18 +586,14 @@
                   <h4>Liên kết nhanh</h4>
                   <ul>
                     <li><a href="Gioithieu.html">Giới thiệu</a></li>
-                    <li><a href="Tuyensinh.html">Tuyển sinh</a></li>
                     <li><a href="Tintuc.html">Tin tức</a></li>
-                    <li><a href="Lienhe.html">Liên hệ</a></li>
                   </ul>
                 </div>
                 <div class="footer__column">
                   <h4>Hỗ trợ</h4>
                   <ul>
-                    <li><a href="#">Câu hỏi thường gặp</a></li>
-                    <li><a href="#">Hướng dẫn</a></li>
+                    <li><a href="Lienhe.html">Liên hệ</a></li>
                     <li><a href="Gopy.html">Góp ý</a></li>
-                    <li><a href="#">Báo lỗi</a></li>
                   </ul>
                 </div>
                 <div class="footer__column">
@@ -636,11 +621,17 @@
         </div>
       </footer>
 
+      <!-- Floating Action Button -->
       <div class="fab-container">
         <div class="fab fab--main">💬</div>
         <div class="fab-menu">
           <a href="tel:0935308369" class="fab fab--phone">📞</a>
-          <a href="#" class="fab fab--facebook">📘</a>
+          <a
+            href="https://www.facebook.com/groups/ltvpro"
+            class="fab fab--facebook"
+            target="_blank"
+            >📘</a
+          >
           <a href="mailto:levanngat@gmail.com" class="fab fab--email">✉️</a>
           <a href="#top" class="fab fab--top">⬆️</a>
         </div>
@@ -666,5 +657,21 @@
         });
       });
     </script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/68f125934a9fa0194e5f314c/1j7mvliun";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
   </body>
 </html>

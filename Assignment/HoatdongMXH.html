@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Giới thiệu - THPT Lương Thế Vinh</title>
+    <title>Hoạt động Mạng Xã Hội - THPT Lương Thế Vinh</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,14 +12,18 @@
       rel="stylesheet"
     />
 
-    <!-- Global styles -->
     <link rel="stylesheet" href="Css/Chung.css" />
-    <!-- Page-specific styles -->
-    <link rel="stylesheet" href="Css/Gioithieu.css" />
+    <link rel="stylesheet" href="Css/HoatdongMXH.css" />
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v24.0"
+    ></script>
     <div class="page">
-      <!-- Header -->
       <header class="header">
         <div class="header__gradient">
           <div class="header__top">
@@ -38,7 +41,6 @@
                   </p>
                 </div>
               </div>
-
               <div class="header__stats">
                 <div class="stat-item">
                   <div class="stat-number">27</div>
@@ -55,14 +57,13 @@
               </div>
             </div>
           </div>
-
           <nav class="nav">
             <div class="container">
               <ul class="nav__list">
                 <li class="nav__item">
                   <a href="index.html" class="nav__link">🏠 Trang Chủ</a>
                 </li>
-                <li class="nav__item has-submenu active">
+                <li class="nav__item has-submenu">
                   <a href="Gioithieu.html" class="nav__link">ℹ️ Giới thiệu</a>
                   <ul class="submenu">
                     <li class="submenu__item">
@@ -102,7 +103,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav__item has-submenu">
+                <li class="nav__item has-submenu active">
                   <a href="Tintuc.html" class="nav__link">📰 Tin tức</a>
                   <ul class="submenu">
                     <li class="submenu__item">
@@ -149,212 +150,229 @@
         </div>
       </header>
 
-      <!-- Page Banner -->
       <div class="page-banner">
         <div class="page-banner__overlay">
           <div class="container">
-            <h1 class="page-banner__title">Giới Thiệu</h1>
+            <h1 class="page-banner__title">Hoạt động Mạng Xã Hội</h1>
             <div class="breadcrumb">
               <a href="index.html" class="breadcrumb__item">Trang chủ</a>
               <span class="breadcrumb__separator">/</span>
+              <a href="Tintuc.html" class="breadcrumb__item">Tin tức</a>
+              <span class="breadcrumb__separator">/</span>
               <span class="breadcrumb__item breadcrumb__item--active"
-                >Giới thiệu</span
+                >Hoạt động MXH</span
               >
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Main Content -->
       <main class="main">
         <div class="container">
-          <!-- Intro Section -->
-          <section class="intro-hero">
-            <div class="intro-hero__content">
-              <h2 class="intro-hero__title">🏫 Trường THPT Lương Thế Vinh</h2>
-              <p class="intro-hero__lead">
-                Ngôi trường mang tên vị tướng tài ba - Đại danh y Lương Thế
-                Vinh, là niềm tự hào của giáo dục Quảng Nam
-              </p>
-            </div>
-            <div class="intro-hero__image">
-              <div class="image-placeholder">
-                <video class="intro-hero__video" autoplay loop controls>
-                  <source src="Media/Video2.mp4" type="video/mp4" />
-                  <source src="Media/Video2.webm" type="video/webm" />
-                  <!-- Fallback cho trình duyệt không hỗ trợ video -->
-                  <img
-                    src="Images/TruongHoc.jpg"
-                    alt="Hình ảnh trường THPT Lương Thế Vinh"
-                  />
-                </video>
-              </div>
-            </div>
-          </section>
+          <div class="social-layout">
+            <div class="social-feed">
+              <article class="social-post">
+                <header class="post-header">
+                  <div class="platform-icon youtube">▶️</div>
+                  <div class="post-author">
+                    <h3>THPT Lương Thế Vinh Channel</h3>
+                    <p class="post-timestamp">
+                      12/10/2025 trên <strong>YouTube</strong>
+                    </p>
+                  </div>
+                </header>
+                <div class="post-body">
+                  <div class="embed-container embed-container--16-9">
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/1ESDDniKFJw?si=BjPwCJwdftFXbMBC"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="post-caption">
+                  <p>Mái trường THPT Lương Thế Vinh - Điện Bàn - Quảng Nam</p>
+                </div>
+                <footer class="post-footer">
+                  <a
+                    href="https://www.youtube.com/watch?v=1ESDDniKFJw"
+                    target="_blank"
+                    class="post-link"
+                    >Xem trên YouTube ↗</a
+                  >
+                </footer>
+              </article>
 
-          <!-- Timeline -->
-          <section class="timeline-section">
-            <h2 class="section-title">📜 Lịch Sử Hình Thành</h2>
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <div class="timeline-date">1998</div>
-                  <h3 class="timeline-title">Thành lập trường</h3>
-                  <p class="timeline-desc">
-                    Trường THPT Lương Thế Vinh được thành lập với 7 lớp học và
-                    15 giáo viên, đánh dấu bước khởi đầu quan trọng trong sự
-                    nghiệp giáo dục tại Quảng Nam.
+              <article class="social-post">
+                <header class="post-header">
+                  <div class="platform-icon facebook">👍</div>
+                  <div class="post-author">
+                    <h3>Fanpage THPT Lương Thế Vinh</h3>
+                    <p class="post-timestamp">
+                      Cập nhật liên tục trên <strong>Facebook</strong>
+                    </p>
+                  </div>
+                </header>
+                <div class="post-body">
+                  <div
+                    class="fb-post"
+                    data-href="https://www.facebook.com/photo.php?fbid=930595971977936&set=a.848673143503553&type=3"
+                    data-width="1000"
+                    data-show-text="true"
+                  >
+                    <blockquote
+                      cite="https://www.facebook.com/luongthevinhconfessionsthpt/posts/930597101977823"
+                      class="fb-xfbml-parse-ignore"
+                    >
+                      <p>
+                        Lễ kỉ niệm 25 năm ngày thành lập trường & kỷ niệm 41 năm
+                        ngày nhà giáo Việt Nam 💚 Bản sao nguồn.
+                      </p>
+                      Đăng bởi
+                      <a
+                        href="https://www.facebook.com/luongthevinhconfessionsthpt"
+                      >
+                        THPT Lương Thế Vinh Confessions
+                      </a>
+                      on
+                      <a
+                        href="https://www.facebook.com/luongthevinhconfessionsthpt/posts/930597101977823"
+                      >
+                        Thứ sáu ngày 17 tháng 11 năm 2023
+                      </a>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="post-caption">
+                  <p>
+                    Lễ kỷ niệm 25 năm ngày thành lập trường & kỷ niệm 41 năm
+                    ngày nhà giáo Việt Nam
                   </p>
+                </div>
+                <footer class="post-footer">
+                  <a
+                    href="https://www.facebook.com/photo.php?fbid=930595971977936&set=a.848673143503553&type=3"
+                    target="_blank"
+                    class="post-link"
+                  >
+                    Xem trên Facebook ↗
+                  </a>
+                </footer>
+              </article>
+
+              <article class="social-post">
+                <header class="post-header">
+                  <div class="platform-icon facebook">👍</div>
+                  <div class="post-author">
+                    <h3>Fanpage THPT Lương Thế Vinh</h3>
+                    <p class="post-timestamp">
+                      Cập nhật liên tục trên <strong>Facebook</strong>
+                    </p>
+                  </div>
+                </header>
+                <div class="post-body">
+                  <div
+                    class="fb-post"
+                    data-href="https://www.facebook.com/luongthevinhconfessionsthpt/posts/pfbid0tc1KmNLNV846MqeahMKi7swi8bamRLJWGzCJxLjvBNos1suGxMqUaAaHPF2PwmeFl"
+                    data-width="1000"
+                    data-show-text="true"
+                  >
+                    <blockquote
+                      cite="https://www.facebook.com/luongthevinhconfessionsthpt/posts/937062161331317"
+                      class="fb-xfbml-parse-ignore"
+                    >
+                      Đăng bởi
+                      <a
+                        href="https://www.facebook.com/luongthevinhconfessionsthpt"
+                      >
+                        THPT Lương Thế Vinh Confessions
+                      </a>
+                      vào
+                      <a
+                        href="https://www.facebook.com/luongthevinhconfessionsthpt/posts/937062161331317"
+                      >
+                        Thứ Hai, ngày 27 tháng 11 năm 2023
+                      </a>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="post-caption">
+                  <p>
+                    Kính gởi mọi người THƯ KÊU GỌI của thầy hiệu trưởng đại diện
+                    cho tập thể học sinh-giáo viên trường THPT Lương Thế Vinh.
+                  </p>
+                </div>
+                <footer class="post-footer">
+                  <a
+                    href="https://www.facebook.com/share/p/19w87H9pa9/"
+                    target="_blank"
+                    class="post-link"
+                  >
+                    Xem trên Facebook ↗
+                  </a>
+                </footer>
+              </article>
+            </div>
+
+            <aside class="social-sidebar">
+              <div class="sidebar-widget">
+                <h3 class="widget-title">📡 Theo Dõi Chúng Tôi</h3>
+                <div class="social-channels-list">
+                  <a
+                    href="https://www.facebook.com/luongthevinhconfessionsthpt"
+                    class="social-channel-item facebook-bg"
+                    target="_blank"
+                  >
+                    <span class="social-channel-icon">📘</span>
+                    <span class="social-channel-name">Fanpage Facebook</span>
+                  </a>
                 </div>
               </div>
 
-              <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <div class="timeline-date">2005</div>
-                  <h3 class="timeline-title">Mở rộng quy mô</h3>
-                  <p class="timeline-desc">
-                    Trường mở rộng lên 20 lớp với đội ngũ 45 giáo viên, xây dựng
-                    thêm khu nhà học mới phục vụ nhu cầu học tập ngày càng tăng.
-                  </p>
+              <div class="sidebar-widget">
+                <h3 class="widget-title">🔥 Từ Khóa Nổi Bật</h3>
+                <div class="tags-cloud">
+                  <a href="#" class="tag-item">#LTVPro</a
+                  ><a href="#" class="tag-item">#KhaiGiang2025</a>
+                  <a href="#" class="tag-item">#HoiThao</a
+                  ><a href="#" class="tag-item">#MuaHeXanh</a>
+                  <a href="#" class="tag-item">#TriAnThayCo</a
+                  ><a href="#" class="tag-item">#HSGLTV</a>
+                  <a href="#" class="tag-item">#CLBAmNhac</a
+                  ><a href="#" class="tag-item">#TheThaoLTV</a>
                 </div>
               </div>
 
-              <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <div class="timeline-date">2015</div>
-                  <h3 class="timeline-title">Đạt chuẩn quốc gia</h3>
-                  <p class="timeline-desc">
-                    Trường được công nhận đạt chuẩn quốc gia mức độ 1, khẳng
-                    định chất lượng giáo dục và cơ sở vật chất hiện đại.
-                  </p>
-                </div>
+              <div class="sidebar-widget">
+                <h3 class="widget-title">🗓️ Sự Kiện Sắp Tới</h3>
+                <ul class="events-list">
+                  <li class="event-item">
+                    <span class="event-date">20/11</span>
+                    <span class="event-name"
+                      >Lễ Kỷ niệm Ngày Nhà giáo Việt Nam</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">15/12</span>
+                    <span class="event-name"
+                      >Hội diễn văn nghệ "Giai điệu tuổi hồng"</span
+                    >
+                  </li>
+                  <li class="event-item">
+                    <span class="event-date">22/12</span>
+                    <span class="event-name"
+                      >Hội trại "Tiếp lửa truyền thống"</span
+                    >
+                  </li>
+                </ul>
               </div>
-
-              <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <div class="timeline-date">2025</div>
-                  <h3 class="timeline-title">Hiện tại</h3>
-                  <p class="timeline-desc">
-                    32 lớp học, gần 1.500 học sinh và 80 cán bộ giáo viên. Tỷ lệ
-                    đỗ đại học đạt 98%, nhiều học sinh vào các trường top đầu.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Stats Grid -->
-          <section class="stats-grid">
-            <h2 class="section-title">📊 Thống Kê Nhà Trường</h2>
-            <div class="stats-cards">
-              <div class="stat-card stat-card--blue">
-                <div class="stat-card__icon">👨‍🎓</div>
-                <div class="stat-card__number">1,487</div>
-                <div class="stat-card__label">Học sinh</div>
-              </div>
-
-              <div class="stat-card stat-card--green">
-                <div class="stat-card__icon">👨‍🏫</div>
-                <div class="stat-card__number">78</div>
-                <div class="stat-card__label">Giáo viên</div>
-              </div>
-
-              <div class="stat-card stat-card--orange">
-                <div class="stat-card__icon">📚</div>
-                <div class="stat-card__number">32</div>
-                <div class="stat-card__label">Lớp học</div>
-              </div>
-
-              <div class="stat-card stat-card--purple">
-                <div class="stat-card__icon">🏆</div>
-                <div class="stat-card__number">98.2%</div>
-                <div class="stat-card__label">Tỷ lệ đỗ ĐH</div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Features Grid -->
-          <section class="features-section">
-            <h2 class="section-title">⭐ Điểm Nổi Bật</h2>
-            <div class="features-grid">
-              <div class="feature-card">
-                <div class="feature-card__icon">🎓</div>
-                <h3 class="feature-card__title">Đội ngũ giáo viên</h3>
-                <p class="feature-card__desc">
-                  100% giáo viên đạt chuẩn, trên 60% có trình độ thạc sĩ, nhiều
-                  giáo viên dạy giỏi cấp tỉnh và quốc gia.
-                </p>
-              </div>
-
-              <div class="feature-card">
-                <div class="feature-card__icon">🏢</div>
-                <h3 class="feature-card__title">Cơ sở vật chất</h3>
-                <p class="feature-card__desc">
-                  Phòng học hiện đại, trang bị đầy đủ thiết bị dạy học, phòng
-                  thí nghiệm, thư viện và sân chơi rộng rãi.
-                </p>
-              </div>
-
-              <div class="feature-card">
-                <div class="feature-card__icon">📖</div>
-                <h3 class="feature-card__title">Chương trình học</h3>
-                <p class="feature-card__desc">
-                  Áp dụng chương trình giáo dục phổ thông mới, tích hợp STEM,
-                  phát triển năng lực và phẩm chất học sinh.
-                </p>
-              </div>
-
-              <div class="feature-card">
-                <div class="feature-card__icon">🎨</div>
-                <h3 class="feature-card__title">Hoạt động ngoại khóa</h3>
-                <p class="feature-card__desc">
-                  Phong phú các câu lạc bộ, hoạt động văn hóa, thể thao, giúp
-                  học sinh phát triển toàn diện.
-                </p>
-              </div>
-
-              <div class="feature-card">
-                <div class="feature-card__icon">🌐</div>
-                <h3 class="feature-card__title">Hợp tác quốc tế</h3>
-                <p class="feature-card__desc">
-                  Giao lưu, học tập kinh nghiệm với các trường trong nước và
-                  quốc tế, mở rộng tầm nhìn cho học sinh.
-                </p>
-              </div>
-
-              <div class="feature-card">
-                <div class="feature-card__icon">💼</div>
-                <h3 class="feature-card__title">Định hướng nghề nghiệp</h3>
-                <p class="feature-card__desc">
-                  Tư vấn hướng nghiệp chuyên sâu, kết nối với các trường đại học
-                  và doanh nghiệp.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <!-- Gallery Section -->
-          <section class="gallery-section">
-            <h2 class="section-title">📸 Hình Ảnh Nhà Trường</h2>
-            <div class="gallery-grid">
-              <div class="gallery-item">
-                <img src="Images/Anhtruong1.jpg" alt="Hình ảnh trường 1" />
-              </div>
-              <div class="gallery-item">
-                <img src="Images/Anhtruong2.jpg" alt="Hình ảnh trường 2" />
-              </div>
-              <div class="gallery-item">
-                <img src="Images/Anhtruong3.jpg" alt="Hình ảnh trường 3" />
-              </div>
-              <div class="gallery-item">
-                <img src="Images/Anhtruong4.jpg" alt="Hình ảnh trường 4" />
-              </div>
-            </div>
-          </section>
+            </aside>
+          </div>
         </div>
       </main>
 

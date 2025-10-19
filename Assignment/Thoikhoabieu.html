@@ -34,7 +34,6 @@
                   </p>
                 </div>
               </div>
-
               <div class="header__stats">
                 <div class="stat-item">
                   <div class="stat-number">27</div>
@@ -51,12 +50,11 @@
               </div>
             </div>
           </div>
-
           <nav class="nav">
             <div class="container">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="Index.html" class="nav__link">🏠 Trang Chủ</a>
+                  <a href="index.html" class="nav__link">🏠 Trang Chủ</a>
                 </li>
                 <li class="nav__item has-submenu">
                   <a href="Gioithieu.html" class="nav__link">ℹ️ Giới thiệu</a>
@@ -111,13 +109,18 @@
                         >🎓 Hoạt động giáo dục</a
                       >
                     </li>
+                    <li class="submenu__item">
+                      <a href="HoatdongMXH.html" class="submenu__link"
+                        >📱 Hoạt động MXH</a
+                      >
+                    </li>
                   </ul>
                 </li>
                 <li class="nav__item has-submenu active">
                   <a href="Dieuhanh.html" class="nav__link">⚙️ Điều hành</a>
                   <ul class="submenu">
                     <li class="submenu__item">
-                      <a href="ThoiKhoaBieu.html" class="submenu__link"
+                      <a href="Thoikhoabieu.html" class="submenu__link"
                         >📅 Thời khóa biểu</a
                       >
                     </li>
@@ -145,7 +148,7 @@
           <div class="container">
             <h1 class="page-banner__title">Thời Khóa Biểu</h1>
             <div class="breadcrumb">
-              <a href="Index.html" class="breadcrumb__item">Trang chủ</a>
+              <a href="index.html" class="breadcrumb__item">Trang chủ</a>
               <span class="breadcrumb__separator">/</span>
               <a href="Dieuhanh.html" class="breadcrumb__item">Điều hành</a>
               <span class="breadcrumb__separator">/</span>
@@ -159,51 +162,26 @@
 
       <main class="main">
         <div class="container">
-          <!-- Info Section -->
           <section class="info-section">
             <div class="info-box">
               <div class="info-icon">📅</div>
               <h2 class="info-title">Thời Khóa Biểu Năm Học 2025-2026</h2>
               <p class="info-text">
-                Thời khóa biểu được cập nhật hàng tuần. Học sinh vui lòng kiểm
-                tra thường xuyên để nắm được lịch học chính xác. Mọi thay đổi sẽ
-                được thông báo qua lớp trưởng.
+                Học sinh vui lòng kéo xuống để tìm thời khóa biểu của lớp mình.
+                Mọi thay đổi sẽ được thông báo qua giáo viên chủ nhiệm.
               </p>
             </div>
           </section>
 
-          <!-- Class Selector -->
-          <section class="selector-section">
-            <div class="selector-box">
-              <div class="selector-header">
-                <h3 class="selector-title">🔍 Chọn Lớp Xem TKB</h3>
-              </div>
-              <div class="selector-controls">
-                <div class="control-group">
-                  <label class="control-label">Khối:</label>
-                  <select class="control-select" id="gradeSelect">
-                    <option value="10">Khối 10</option>
-                    <option value="11">Khối 11</option>
-                    <option value="12" selected>Khối 12</option>
-                  </select>
-                </div>
-                <div class="control-group">
-                  <label class="control-label">Lớp:</label>
-                  <select class="control-select" id="classSelect">
-                    <option value="12A1" selected>12A1</option>
-                    <option value="12A2">12A2</option>
-                    <option value="12A3">12A3</option>
-                    <option value="12A4">12A4</option>
-                    <option value="12A5">12A5</option>
-                  </select>
-                </div>
-                <button class="btn-view">👁️ Xem TKB</button>
-              </div>
-            </div>
-          </section>
+          <nav class="jump-nav">
+            <a href="#khoi12" class="jump-nav__link">🎯 Tới Khối 12</a>
+            <a href="#khoi11" class="jump-nav__link">🎯 Tới Khối 11</a>
+            <a href="#khoi10" class="jump-nav__link">🎯 Tới Khối 10</a>
+          </nav>
 
-          <!-- Schedule Info -->
-          <section class="schedule-info-section">
+          <h2 class="grade-title" id="khoi12">KHỐI 12</h2>
+
+          <section class="timetable-section">
             <div class="schedule-meta">
               <div class="meta-card">
                 <div class="meta-icon">📚</div>
@@ -216,37 +194,28 @@
                 <div class="meta-icon">👨‍🏫</div>
                 <div class="meta-content">
                   <div class="meta-label">GVCN</div>
-                  <div class="meta-value">Cô Nguyễn Thị A</div>
-                </div>
-              </div>
-              <div class="meta-card">
-                <div class="meta-icon">📆</div>
-                <div class="meta-content">
-                  <div class="meta-label">Tuần</div>
-                  <div class="meta-value">8 (14/10 - 20/10)</div>
+                  <div class="meta-value">Cô Mai Lan</div>
                 </div>
               </div>
               <div class="meta-card">
                 <div class="meta-icon">👥</div>
                 <div class="meta-content">
                   <div class="meta-label">Sĩ số</div>
-                  <div class="meta-value">45 học sinh</div>
+                  <div class="meta-value">45</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">Phòng</div>
+                  <div class="meta-value">A.201</div>
                 </div>
               </div>
             </div>
-          </section>
-
-          <!-- Time Table -->
-          <section class="timetable-section">
             <div class="timetable-container">
               <div class="timetable-header">
                 <h3 class="timetable-title">📋 Thời Khóa Biểu Lớp 12A1</h3>
-                <div class="timetable-actions">
-                  <button class="action-btn">🖨️ In TKB</button>
-                  <button class="action-btn">📥 Tải về</button>
-                </div>
               </div>
-
               <div class="timetable-wrapper">
                 <table class="timetable">
                   <thead>
@@ -261,203 +230,130 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <!-- Period 1 -->
                     <tr>
                       <td class="td-period">
                         <div class="period-number">1</div>
-                        <div class="period-time">7:00 - 7:45</div>
+                        <div class="period-time">7:00-7:45</div>
                       </td>
                       <td class="td-subject subject-math">
-                        <div class="subject-name">Toán</div>
-                        <div class="subject-teacher">Thầy Nguyễn Văn B</div>
-                        <div class="subject-room">P.201</div>
+                        Toán<br />Thầy Quốc Tuấn<br />A.201
                       </td>
                       <td class="td-subject subject-physics">
-                        <div class="subject-name">Vật Lý</div>
-                        <div class="subject-teacher">Thầy Trần Văn C</div>
-                        <div class="subject-room">P.301</div>
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
                       </td>
                       <td class="td-subject subject-literature">
-                        <div class="subject-name">Ngữ Văn</div>
-                        <div class="subject-teacher">Cô Hoàng Thị D</div>
-                        <div class="subject-room">P.201</div>
+                        Ngữ Văn<br />Cô Mai Lan<br />A.201
                       </td>
                       <td class="td-subject subject-english">
-                        <div class="subject-name">Tiếng Anh</div>
-                        <div class="subject-teacher">Cô Phạm Thị E</div>
-                        <div class="subject-room">P.201</div>
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />A.201
                       </td>
                       <td class="td-subject subject-chemistry">
-                        <div class="subject-name">Hóa Học</div>
-                        <div class="subject-teacher">Cô Lê Thị F</div>
-                        <div class="subject-room">P.302</div>
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
                       </td>
                       <td class="td-subject subject-history">
-                        <div class="subject-name">Lịch Sử</div>
-                        <div class="subject-teacher">Thầy Võ Văn G</div>
-                        <div class="subject-room">P.201</div>
+                        Lịch Sử<br />Thầy Hoàng Bách<br />A.201
                       </td>
                     </tr>
-
-                    <!-- Period 2 -->
                     <tr>
                       <td class="td-period">
                         <div class="period-number">2</div>
-                        <div class="period-time">7:50 - 8:35</div>
+                        <div class="period-time">7:50-8:35</div>
                       </td>
                       <td class="td-subject subject-math">
-                        <div class="subject-name">Toán</div>
-                        <div class="subject-teacher">Thầy Nguyễn Văn B</div>
-                        <div class="subject-room">P.201</div>
+                        Toán<br />Thầy Quốc Tuấn<br />A.201
                       </td>
                       <td class="td-subject subject-physics">
-                        <div class="subject-name">Vật Lý</div>
-                        <div class="subject-teacher">Thầy Trần Văn C</div>
-                        <div class="subject-room">P.301</div>
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
                       </td>
                       <td class="td-subject subject-literature">
-                        <div class="subject-name">Ngữ Văn</div>
-                        <div class="subject-teacher">Cô Hoàng Thị D</div>
-                        <div class="subject-room">P.201</div>
+                        Ngữ Văn<br />Cô Mai Lan<br />A.201
                       </td>
                       <td class="td-subject subject-english">
-                        <div class="subject-name">Tiếng Anh</div>
-                        <div class="subject-teacher">Cô Phạm Thị E</div>
-                        <div class="subject-room">P.201</div>
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />A.201
                       </td>
                       <td class="td-subject subject-chemistry">
-                        <div class="subject-name">Hóa Học</div>
-                        <div class="subject-teacher">Cô Lê Thị F</div>
-                        <div class="subject-room">P.302</div>
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
                       </td>
                       <td class="td-subject subject-geography">
-                        <div class="subject-name">Địa Lý</div>
-                        <div class="subject-teacher">Cô Đặng Thị H</div>
-                        <div class="subject-room">P.201</div>
+                        Địa Lý<br />Cô Thu Thảo<br />A.201
                       </td>
                     </tr>
-
-                    <!-- Period 3 -->
                     <tr>
                       <td class="td-period">
                         <div class="period-number">3</div>
-                        <div class="period-time">8:40 - 9:25</div>
+                        <div class="period-time">8:40-9:25</div>
                       </td>
                       <td class="td-subject subject-english">
-                        <div class="subject-name">Tiếng Anh</div>
-                        <div class="subject-teacher">Cô Phạm Thị E</div>
-                        <div class="subject-room">P.201</div>
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />A.201
                       </td>
                       <td class="td-subject subject-math">
-                        <div class="subject-name">Toán</div>
-                        <div class="subject-teacher">Thầy Nguyễn Văn B</div>
-                        <div class="subject-room">P.201</div>
+                        Toán<br />Thầy Quốc Tuấn<br />A.201
                       </td>
                       <td class="td-subject subject-physics">
-                        <div class="subject-name">Vật Lý</div>
-                        <div class="subject-teacher">Thầy Trần Văn C</div>
-                        <div class="subject-room">P.301</div>
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
                       </td>
                       <td class="td-subject subject-math">
-                        <div class="subject-name">Toán</div>
-                        <div class="subject-teacher">Thầy Nguyễn Văn B</div>
-                        <div class="subject-room">P.201</div>
+                        Toán<br />Thầy Quốc Tuấn<br />A.201
                       </td>
                       <td class="td-subject subject-literature">
-                        <div class="subject-name">Ngữ Văn</div>
-                        <div class="subject-teacher">Cô Hoàng Thị D</div>
-                        <div class="subject-room">P.201</div>
+                        Ngữ Văn<br />Cô Mai Lan<br />A.201
                       </td>
                       <td class="td-subject subject-pe">
-                        <div class="subject-name">Thể Dục</div>
-                        <div class="subject-teacher">Thầy Trương Văn I</div>
-                        <div class="subject-room">Sân TD</div>
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
                       </td>
                     </tr>
-
-                    <!-- Break -->
                     <tr class="break-row">
-                      <td class="td-period">
-                        <div class="period-number">☕</div>
-                      </td>
+                      <td class="td-period">☕</td>
                       <td colspan="6" class="td-break">
                         <div class="break-text">GIẢI LAO (9:25 - 9:40)</div>
                       </td>
                     </tr>
-
-                    <!-- Period 4 -->
                     <tr>
                       <td class="td-period">
                         <div class="period-number">4</div>
-                        <div class="period-time">9:40 - 10:25</div>
+                        <div class="period-time">9:40-10:25</div>
                       </td>
                       <td class="td-subject subject-literature">
-                        <div class="subject-name">Ngữ Văn</div>
-                        <div class="subject-teacher">Cô Hoàng Thị D</div>
-                        <div class="subject-room">P.201</div>
+                        Ngữ Văn<br />Cô Mai Lan<br />A.201
                       </td>
                       <td class="td-subject subject-chemistry">
-                        <div class="subject-name">Hóa Học</div>
-                        <div class="subject-teacher">Cô Lê Thị F</div>
-                        <div class="subject-room">P.302</div>
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
                       </td>
                       <td class="td-subject subject-english">
-                        <div class="subject-name">Tiếng Anh</div>
-                        <div class="subject-teacher">Cô Phạm Thị E</div>
-                        <div class="subject-room">P.201</div>
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />A.201
                       </td>
                       <td class="td-subject subject-biology">
-                        <div class="subject-name">Sinh Học</div>
-                        <div class="subject-teacher">Cô Lý Thị K</div>
-                        <div class="subject-room">P.303</div>
+                        Sinh Học<br />Cô Diệu Linh<br />P.Sinh 1
                       </td>
                       <td class="td-subject subject-math">
-                        <div class="subject-name">Toán</div>
-                        <div class="subject-teacher">Thầy Nguyễn Văn B</div>
-                        <div class="subject-room">P.201</div>
+                        Toán<br />Thầy Quốc Tuấn<br />A.201
                       </td>
                       <td class="td-subject subject-pe">
-                        <div class="subject-name">Thể Dục</div>
-                        <div class="subject-teacher">Thầy Trương Văn I</div>
-                        <div class="subject-room">Sân TD</div>
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
                       </td>
                     </tr>
-
-                    <!-- Period 5 -->
                     <tr>
                       <td class="td-period">
                         <div class="period-number">5</div>
-                        <div class="period-time">10:30 - 11:15</div>
+                        <div class="period-time">10:30-11:15</div>
                       </td>
                       <td class="td-subject subject-physics">
-                        <div class="subject-name">Vật Lý</div>
-                        <div class="subject-teacher">Thầy Trần Văn C</div>
-                        <div class="subject-room">P.301</div>
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
                       </td>
                       <td class="td-subject subject-english">
-                        <div class="subject-name">Tiếng Anh</div>
-                        <div class="subject-teacher">Cô Phạm Thị E</div>
-                        <div class="subject-room">P.201</div>
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />A.201
                       </td>
                       <td class="td-subject subject-math">
-                        <div class="subject-name">Toán</div>
-                        <div class="subject-teacher">Thầy Nguyễn Văn B</div>
-                        <div class="subject-room">P.201</div>
+                        Toán<br />Thầy Quốc Tuấn<br />A.201
                       </td>
                       <td class="td-subject subject-gdcd">
-                        <div class="subject-name">GDCD</div>
-                        <div class="subject-teacher">Thầy Bùi Văn L</div>
-                        <div class="subject-room">P.201</div>
+                        GDCD<br />Thầy Bảo An<br />A.201
                       </td>
                       <td class="td-subject subject-physics">
-                        <div class="subject-name">Vật Lý</div>
-                        <div class="subject-teacher">Thầy Trần Văn C</div>
-                        <div class="subject-room">P.301</div>
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
                       </td>
                       <td class="td-subject subject-class">
-                        <div class="subject-name">Sinh Hoạt Lớp</div>
-                        <div class="subject-teacher">Cô Nguyễn Thị A</div>
-                        <div class="subject-room">P.201</div>
+                        Sinh Hoạt Lớp<br />Cô Mai Lan<br />A.201
                       </td>
                     </tr>
                   </tbody>
@@ -466,7 +362,1999 @@
             </div>
           </section>
 
-          <!-- Legend -->
+          <section class="timetable-section">
+            <div class="schedule-meta">
+              <div class="meta-card">
+                <div class="meta-icon">📚</div>
+                <div class="meta-content">
+                  <div class="meta-label">Lớp</div>
+                  <div class="meta-value">12A2</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👨‍🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">GVCN</div>
+                  <div class="meta-value">Thầy Minh Hải</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👥</div>
+                <div class="meta-content">
+                  <div class="meta-label">Sĩ số</div>
+                  <div class="meta-value">44</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">Phòng</div>
+                  <div class="meta-value">A.202</div>
+                </div>
+              </div>
+            </div>
+            <div class="timetable-container">
+              <div class="timetable-header">
+                <h3 class="timetable-title">📋 Thời Khóa Biểu Lớp 12A2</h3>
+              </div>
+              <div class="timetable-wrapper">
+                <table class="timetable">
+                  <thead>
+                    <tr>
+                      <th class="th-period">Tiết</th>
+                      <th class="th-day">Thứ Hai</th>
+                      <th class="th-day">Thứ Ba</th>
+                      <th class="th-day">Thứ Tư</th>
+                      <th class="th-day">Thứ Năm</th>
+                      <th class="th-day">Thứ Sáu</th>
+                      <th class="th-day">Thứ Bảy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">1</div>
+                        <div class="period-time">7:00-7:45</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />A.202
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />A.202
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />A.202
+                      </td>
+                      <td class="td-subject subject-geography">
+                        Địa Lý<br />Cô Thu Thảo<br />A.202
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">2</div>
+                        <div class="period-time">7:50-8:35</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />A.202
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />A.202
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-biology">
+                        Sinh Học<br />Cô Diệu Linh<br />P.Sinh 1
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />A.202
+                      </td>
+                      <td class="td-subject subject-history">
+                        Lịch Sử<br />Thầy Hoàng Bách<br />A.202
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">3</div>
+                        <div class="period-time">8:40-9:25</div>
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />A.202
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />A.202
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />A.202
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />A.202
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr class="break-row">
+                      <td class="td-period">☕</td>
+                      <td colspan="6" class="td-break">
+                        <div class="break-text">GIẢI LAO (9:25 - 9:40)</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">4</div>
+                        <div class="period-time">9:40-10:25</div>
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />A.202
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />A.202
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">5</div>
+                        <div class="period-time">10:30-11:15</div>
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />A.202
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />A.202
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />A.202
+                      </td>
+                      <td class="td-subject subject-gdcd">
+                        GDCD<br />Thầy Bảo An<br />A.202
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-class">
+                        Sinh Hoạt Lớp<br />Thầy Minh Hải<br />A.202
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="timetable-section">
+            <div class="schedule-meta">
+              <div class="meta-card">
+                <div class="meta-icon">📚</div>
+                <div class="meta-content">
+                  <div class="meta-label">Lớp</div>
+                  <div class="meta-value">12A3</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👨‍🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">GVCN</div>
+                  <div class="meta-value">Cô Thanh Hà</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👥</div>
+                <div class="meta-content">
+                  <div class="meta-label">Sĩ số</div>
+                  <div class="meta-value">45</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">Phòng</div>
+                  <div class="meta-value">A.203</div>
+                </div>
+              </div>
+            </div>
+            <div class="timetable-container">
+              <div class="timetable-header">
+                <h3 class="timetable-title">📋 Thời Khóa Biểu Lớp 12A3</h3>
+              </div>
+              <div class="timetable-wrapper">
+                <table class="timetable">
+                  <thead>
+                    <tr>
+                      <th class="th-period">Tiết</th>
+                      <th class="th-day">Thứ Hai</th>
+                      <th class="th-day">Thứ Ba</th>
+                      <th class="th-day">Thứ Tư</th>
+                      <th class="th-day">Thứ Năm</th>
+                      <th class="th-day">Thứ Sáu</th>
+                      <th class="th-day">Thứ Bảy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">1</div>
+                        <div class="period-time">7:00-7:45</div>
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />A.203
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.203
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />A.203
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-history">
+                        Lịch Sử<br />Thầy Hoàng Bách<br />A.203
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">2</div>
+                        <div class="period-time">7:50-8:35</div>
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />A.203
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.203
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />A.203
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-geography">
+                        Địa Lý<br />Cô Thu Thảo<br />A.203
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">3</div>
+                        <div class="period-time">8:40-9:25</div>
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.203
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />A.203
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />A.203
+                      </td>
+                      <td class="td-subject subject-biology">
+                        Sinh Học<br />Cô Diệu Linh<br />P.Sinh 2
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr class="break-row">
+                      <td class="td-period">☕</td>
+                      <td colspan="6" class="td-break">
+                        <div class="break-text">GIẢI LAO (9:25 - 9:40)</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">4</div>
+                        <div class="period-time">9:40-10:25</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />A.203
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.203
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.203
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />A.203
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">5</div>
+                        <div class="period-time">10:30-11:15</div>
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />A.203
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.203
+                      </td>
+                      <td class="td-subject subject-gdcd">
+                        GDCD<br />Thầy Bảo An<br />A.203
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.203
+                      </td>
+                      <td class="td-subject subject-class">
+                        Sinh Hoạt Lớp<br />Cô Thanh Hà<br />A.203
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="timetable-section">
+            <div class="schedule-meta">
+              <div class="meta-card">
+                <div class="meta-icon">📚</div>
+                <div class="meta-content">
+                  <div class="meta-label">Lớp</div>
+                  <div class="meta-value">12A4</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👨‍🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">GVCN</div>
+                  <div class="meta-value">Thầy Nam Phong</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👥</div>
+                <div class="meta-content">
+                  <div class="meta-label">Sĩ số</div>
+                  <div class="meta-value">43</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">Phòng</div>
+                  <div class="meta-value">A.204</div>
+                </div>
+              </div>
+            </div>
+            <div class="timetable-container">
+              <div class="timetable-header">
+                <h3 class="timetable-title">📋 Thời Khóa Biểu Lớp 12A4</h3>
+              </div>
+              <div class="timetable-wrapper">
+                <table class="timetable">
+                  <thead>
+                    <tr>
+                      <th class="th-period">Tiết</th>
+                      <th class="th-day">Thứ Hai</th>
+                      <th class="th-day">Thứ Ba</th>
+                      <th class="th-day">Thứ Tư</th>
+                      <th class="th-day">Thứ Năm</th>
+                      <th class="th-day">Thứ Sáu</th>
+                      <th class="th-day">Thứ Bảy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">1</div>
+                        <div class="period-time">7:00-7:45</div>
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.204
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />A.204
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />A.204
+                      </td>
+                      <td class="td-subject subject-geography">
+                        Địa Lý<br />Cô Thu Thảo<br />A.204
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">2</div>
+                        <div class="period-time">7:50-8:35</div>
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.204
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />A.204
+                      </td>
+                      <td class="td-subject subject-biology">
+                        Sinh Học<br />Cô Diệu Linh<br />P.Sinh 2
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />A.204
+                      </td>
+                      <td class="td-subject subject-history">
+                        Lịch Sử<br />Thầy Hoàng Bách<br />A.204
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">3</div>
+                        <div class="period-time">8:40-9:25</div>
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />A.204
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />A.204
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.204
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.204
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr class="break-row">
+                      <td class="td-period">☕</td>
+                      <td colspan="6" class="td-break">
+                        <div class="break-text">GIẢI LAO (9:25 - 9:40)</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">4</div>
+                        <div class="period-time">9:40-10:25</div>
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.204
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />A.204
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />A.204
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">5</div>
+                        <div class="period-time">10:30-11:15</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />A.204
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.204
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />A.204
+                      </td>
+                      <td class="td-subject subject-gdcd">
+                        GDCD<br />Thầy Bảo An<br />A.204
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-class">
+                        Sinh Hoạt Lớp<br />Thầy Nam Phong<br />A.204
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <h2 class="grade-title" id="khoi11">KHỐI 11</h2>
+          <section class="timetable-section">
+            <div class="schedule-meta">
+              <div class="meta-card">
+                <div class="meta-icon">📚</div>
+                <div class="meta-content">
+                  <div class="meta-label">Lớp</div>
+                  <div class="meta-value">11A1</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👨‍🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">GVCN</div>
+                  <div class="meta-value">Cô Bích Trâm</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👥</div>
+                <div class="meta-content">
+                  <div class="meta-label">Sĩ số</div>
+                  <div class="meta-value">42</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">Phòng</div>
+                  <div class="meta-value">B.101</div>
+                </div>
+              </div>
+            </div>
+            <div class="timetable-container">
+              <div class="timetable-header">
+                <h3 class="timetable-title">📋 Thời Khóa Biểu Lớp 11A1</h3>
+              </div>
+              <div class="timetable-wrapper">
+                <table class="timetable">
+                  <thead>
+                    <tr>
+                      <th class="th-period">Tiết</th>
+                      <th class="th-day">Thứ Hai</th>
+                      <th class="th-day">Thứ Ba</th>
+                      <th class="th-day">Thứ Tư</th>
+                      <th class="th-day">Thứ Năm</th>
+                      <th class="th-day">Thứ Sáu</th>
+                      <th class="th-day">Thứ Bảy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">1</div>
+                        <div class="period-time">7:00-7:45</div>
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />B.101
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />B.101
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />B.101
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-history">
+                        Lịch Sử<br />Thầy Hoàng Bách<br />B.101
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">2</div>
+                        <div class="period-time">7:50-8:35</div>
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />B.101
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />B.101
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />B.101
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-geography">
+                        Địa Lý<br />Cô Thu Thảo<br />B.101
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">3</div>
+                        <div class="period-time">8:40-9:25</div>
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />B.101
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />B.101
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />B.101
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />B.101
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr class="break-row">
+                      <td class="td-period">☕</td>
+                      <td colspan="6" class="td-break">
+                        <div class="break-text">GIẢI LAO (9:25 - 9:40)</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">4</div>
+                        <div class="period-time">9:40-10:25</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />B.101
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />B.101
+                      </td>
+                      <td class="td-subject subject-biology">
+                        Sinh Học<br />Cô Diệu Linh<br />P.Sinh 1
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />B.101
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">5</div>
+                        <div class="period-time">10:30-11:15</div>
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />B.101
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />B.101
+                      </td>
+                      <td class="td-subject subject-gdcd">
+                        GDCD<br />Thầy Bảo An<br />B.101
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-class">
+                        Sinh Hoạt Lớp<br />Cô Bích Trâm<br />B.101
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="timetable-section">
+            <div class="schedule-meta">
+              <div class="meta-card">
+                <div class="meta-icon">📚</div>
+                <div class="meta-content">
+                  <div class="meta-label">Lớp</div>
+                  <div class="meta-value">11A2</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👨‍🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">GVCN</div>
+                  <div class="meta-value">Cô Quỳnh Giao</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👥</div>
+                <div class="meta-content">
+                  <div class="meta-label">Sĩ số</div>
+                  <div class="meta-value">41</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">Phòng</div>
+                  <div class="meta-value">B.102</div>
+                </div>
+              </div>
+            </div>
+            <div class="timetable-container">
+              <div class="timetable-header">
+                <h3 class="timetable-title">📋 Thời Khóa Biểu Lớp 11A2</h3>
+              </div>
+              <div class="timetable-wrapper">
+                <table class="timetable">
+                  <thead>
+                    <tr>
+                      <th class="th-period">Tiết</th>
+                      <th class="th-day">Thứ Hai</th>
+                      <th class="th-day">Thứ Ba</th>
+                      <th class="th-day">Thứ Tư</th>
+                      <th class="th-day">Thứ Năm</th>
+                      <th class="th-day">Thứ Sáu</th>
+                      <th class="th-day">Thứ Bảy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">1</div>
+                        <div class="period-time">7:00-7:45</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />B.102
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />B.102
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />B.102
+                      </td>
+                      <td class="td-subject subject-geography">
+                        Địa Lý<br />Cô Thu Thảo<br />B.102
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">2</div>
+                        <div class="period-time">7:50-8:35</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />B.102
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />B.102
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-biology">
+                        Sinh Học<br />Cô Diệu Linh<br />P.Sinh 1
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />B.102
+                      </td>
+                      <td class="td-subject subject-history">
+                        Lịch Sử<br />Thầy Hoàng Bách<br />B.102
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">3</div>
+                        <div class="period-time">8:40-9:25</div>
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />B.102
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />B.102
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />B.102
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />B.102
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr class="break-row">
+                      <td class="td-period">☕</td>
+                      <td colspan="6" class="td-break">
+                        <div class="break-text">GIẢI LAO (9:25 - 9:40)</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">4</div>
+                        <div class="period-time">9:40-10:25</div>
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />B.102
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />B.102
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">5</div>
+                        <div class="period-time">10:30-11:15</div>
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />B.102
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />B.102
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />B.102
+                      </td>
+                      <td class="td-subject subject-gdcd">
+                        GDCD<br />Thầy Bảo An<br />B.102
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-class">
+                        Sinh Hoạt Lớp<br />Cô Quỳnh Giao<br />B.102
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="timetable-section">
+            <div class="schedule-meta">
+              <div class="meta-card">
+                <div class="meta-icon">📚</div>
+                <div class="meta-content">
+                  <div class="meta-label">Lớp</div>
+                  <div class="meta-value">11A3</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👨‍🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">GVCN</div>
+                  <div class="meta-value">Cô Ngọc Diệp</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👥</div>
+                <div class="meta-content">
+                  <div class="meta-label">Sĩ số</div>
+                  <div class="meta-value">42</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">Phòng</div>
+                  <div class="meta-value">B.103</div>
+                </div>
+              </div>
+            </div>
+            <div class="timetable-container">
+              <div class="timetable-header">
+                <h3 class="timetable-title">📋 Thời Khóa Biểu Lớp 11A3</h3>
+              </div>
+              <div class="timetable-wrapper">
+                <table class="timetable">
+                  <thead>
+                    <tr>
+                      <th class="th-period">Tiết</th>
+                      <th class="th-day">Thứ Hai</th>
+                      <th class="th-day">Thứ Ba</th>
+                      <th class="th-day">Thứ Tư</th>
+                      <th class="th-day">Thứ Năm</th>
+                      <th class="th-day">Thứ Sáu</th>
+                      <th class="th-day">Thứ Bảy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">1</div>
+                        <div class="period-time">7:00-7:45</div>
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Ngọc Diệp<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />B.103
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.103
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />B.103
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-history">
+                        Lịch Sử<br />Thầy Hoàng Bách<br />B.103
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">2</div>
+                        <div class="period-time">7:50-8:35</div>
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Ngọc Diệp<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />B.103
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.103
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />B.103
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-geography">
+                        Địa Lý<br />Cô Thu Thảo<br />B.103
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">3</div>
+                        <div class="period-time">8:40-9:25</div>
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.103
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />B.103
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />B.103
+                      </td>
+                      <td class="td-subject subject-biology">
+                        Sinh Học<br />Cô Diệu Linh<br />P.Sinh 2
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr class="break-row">
+                      <td class="td-period">☕</td>
+                      <td colspan="6" class="td-break">
+                        <div class="break-text">GIẢI LAO (9:25 - 9:40)</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">4</div>
+                        <div class="period-time">9:40-10:25</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />B.103
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.103
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Ngọc Diệp<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.103
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />B.103
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">5</div>
+                        <div class="period-time">10:30-11:15</div>
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />B.103
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.103
+                      </td>
+                      <td class="td-subject subject-gdcd">
+                        GDCD<br />Thầy Bảo An<br />B.103
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.103
+                      </td>
+                      <td class="td-subject subject-class">
+                        Sinh Hoạt Lớp<br />Cô Ngọc Diệp<br />B.103
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="timetable-section">
+            <div class="schedule-meta">
+              <div class="meta-card">
+                <div class="meta-icon">📚</div>
+                <div class="meta-content">
+                  <div class="meta-label">Lớp</div>
+                  <div class="meta-value">11A4</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👨‍🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">GVCN</div>
+                  <div class="meta-value">Cô Trúc Quỳnh</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👥</div>
+                <div class="meta-content">
+                  <div class="meta-label">Sĩ số</div>
+                  <div class="meta-value">40</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">Phòng</div>
+                  <div class="meta-value">B.104</div>
+                </div>
+              </div>
+            </div>
+            <div class="timetable-container">
+              <div class="timetable-header">
+                <h3 class="timetable-title">📋 Thời Khóa Biểu Lớp 11A4</h3>
+              </div>
+              <div class="timetable-wrapper">
+                <table class="timetable">
+                  <thead>
+                    <tr>
+                      <th class="th-period">Tiết</th>
+                      <th class="th-day">Thứ Hai</th>
+                      <th class="th-day">Thứ Ba</th>
+                      <th class="th-day">Thứ Tư</th>
+                      <th class="th-day">Thứ Năm</th>
+                      <th class="th-day">Thứ Sáu</th>
+                      <th class="th-day">Thứ Bảy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">1</div>
+                        <div class="period-time">7:00-7:45</div>
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.104
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />B.104
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Ngọc Diệp<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />B.104
+                      </td>
+                      <td class="td-subject subject-geography">
+                        Địa Lý<br />Cô Thu Thảo<br />B.104
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">2</div>
+                        <div class="period-time">7:50-8:35</div>
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.104
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />B.104
+                      </td>
+                      <td class="td-subject subject-biology">
+                        Sinh Học<br />Cô Diệu Linh<br />P.Sinh 2
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />B.104
+                      </td>
+                      <td class="td-subject subject-history">
+                        Lịch Sử<br />Thầy Hoàng Bách<br />B.104
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">3</div>
+                        <div class="period-time">8:40-9:25</div>
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />B.104
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />B.104
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.104
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.104
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr class="break-row">
+                      <td class="td-period">☕</td>
+                      <td colspan="6" class="td-break">
+                        <div class="break-text">GIẢI LAO (9:25 - 9:40)</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">4</div>
+                        <div class="period-time">9:40-10:25</div>
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.104
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Ngọc Diệp<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />B.104
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />B.104
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">5</div>
+                        <div class="period-time">10:30-11:15</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />B.104
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.104
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />B.104
+                      </td>
+                      <td class="td-subject subject-gdcd">
+                        GDCD<br />Thầy Bảo An<br />B.104
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Ngọc Diệp<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-class">
+                        Sinh Hoạt Lớp<br />Cô Trúc Quỳnh<br />B.104
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <h2 class="grade-title" id="khoi10">KHỐI 10</h2>
+          <section class="timetable-section">
+            <div class="schedule-meta">
+              <div class="meta-card">
+                <div class="meta-icon">📚</div>
+                <div class="meta-content">
+                  <div class="meta-label">Lớp</div>
+                  <div class="meta-value">10A1</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👨‍🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">GVCN</div>
+                  <div class="meta-value">Thầy Hoàng Bách</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👥</div>
+                <div class="meta-content">
+                  <div class="meta-label">Sĩ số</div>
+                  <div class="meta-value">40</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">Phòng</div>
+                  <div class="meta-value">C.001</div>
+                </div>
+              </div>
+            </div>
+            <div class="timetable-container">
+              <div class="timetable-header">
+                <h3 class="timetable-title">📋 Thời Khóa Biểu Lớp 10A1</h3>
+              </div>
+              <div class="timetable-wrapper">
+                <table class="timetable">
+                  <thead>
+                    <tr>
+                      <th class="th-period">Tiết</th>
+                      <th class="th-day">Thứ Hai</th>
+                      <th class="th-day">Thứ Ba</th>
+                      <th class="th-day">Thứ Tư</th>
+                      <th class="th-day">Thứ Năm</th>
+                      <th class="th-day">Thứ Sáu</th>
+                      <th class="th-day">Thứ Bảy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">1</div>
+                        <div class="period-time">7:00-7:45</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />C.001
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />C.001
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />C.001
+                      </td>
+                      <td class="td-subject subject-geography">
+                        Địa Lý<br />Cô Thu Thảo<br />C.001
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">2</div>
+                        <div class="period-time">7:50-8:35</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />C.001
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />C.001
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-biology">
+                        Sinh Học<br />Cô Diệu Linh<br />P.Sinh 1
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />C.001
+                      </td>
+                      <td class="td-subject subject-history">
+                        Lịch Sử<br />Thầy Hoàng Bách<br />C.001
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">3</div>
+                        <div class="period-time">8:40-9:25</div>
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />C.001
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />C.001
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />C.001
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />C.001
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr class="break-row">
+                      <td class="td-period">☕</td>
+                      <td colspan="6" class="td-break">
+                        <div class="break-text">GIẢI LAO (9:25 - 9:40)</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">4</div>
+                        <div class="period-time">9:40-10:25</div>
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />C.001
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />C.001
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">5</div>
+                        <div class="period-time">10:30-11:15</div>
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />C.001
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />C.001
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />C.001
+                      </td>
+                      <td class="td-subject subject-gdcd">
+                        GDCD<br />Thầy Bảo An<br />C.001
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-class">
+                        Sinh Hoạt Lớp<br />Thầy Hoàng Bách<br />C.001
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="timetable-section">
+            <div class="schedule-meta">
+              <div class="meta-card">
+                <div class="meta-icon">📚</div>
+                <div class="meta-content">
+                  <div class="meta-label">Lớp</div>
+                  <div class="meta-value">10A2</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👨‍🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">GVCN</div>
+                  <div class="meta-value">Thầy Bảo An</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👥</div>
+                <div class="meta-content">
+                  <div class="meta-label">Sĩ số</div>
+                  <div class="meta-value">41</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">Phòng</div>
+                  <div class="meta-value">C.002</div>
+                </div>
+              </div>
+            </div>
+            <div class="timetable-container">
+              <div class="timetable-header">
+                <h3 class="timetable-title">📋 Thời Khóa Biểu Lớp 10A2</h3>
+              </div>
+              <div class="timetable-wrapper">
+                <table class="timetable">
+                  <thead>
+                    <tr>
+                      <th class="th-period">Tiết</th>
+                      <th class="th-day">Thứ Hai</th>
+                      <th class="th-day">Thứ Ba</th>
+                      <th class="th-day">Thứ Tư</th>
+                      <th class="th-day">Thứ Năm</th>
+                      <th class="th-day">Thứ Sáu</th>
+                      <th class="th-day">Thứ Bảy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">1</div>
+                        <div class="period-time">7:00-7:45</div>
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Ngọc Diệp<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />C.002
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />C.002
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />C.002
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-history">
+                        Lịch Sử<br />Thầy Hoàng Bách<br />C.002
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">2</div>
+                        <div class="period-time">7:50-8:35</div>
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Ngọc Diệp<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />C.002
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />C.002
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />C.002
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-geography">
+                        Địa Lý<br />Cô Thu Thảo<br />C.002
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">3</div>
+                        <div class="period-time">8:40-9:25</div>
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />C.002
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />C.002
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />C.002
+                      </td>
+                      <td class="td-subject subject-biology">
+                        Sinh Học<br />Cô Diệu Linh<br />P.Sinh 2
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr class="break-row">
+                      <td class="td-period">☕</td>
+                      <td colspan="6" class="td-break">
+                        <div class="break-text">GIẢI LAO (9:25 - 9:40)</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">4</div>
+                        <div class="period-time">9:40-10:25</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />C.002
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />C.002
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Ngọc Diệp<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />C.002
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />C.002
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">5</div>
+                        <div class="period-time">10:30-11:15</div>
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />C.002
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />C.002
+                      </td>
+                      <td class="td-subject subject-gdcd">
+                        GDCD<br />Thầy Bảo An<br />C.002
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />C.002
+                      </td>
+                      <td class="td-subject subject-class">
+                        Sinh Hoạt Lớp<br />Thầy Bảo An<br />C.002
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="timetable-section">
+            <div class="schedule-meta">
+              <div class="meta-card">
+                <div class="meta-icon">📚</div>
+                <div class="meta-content">
+                  <div class="meta-label">Lớp</div>
+                  <div class="meta-value">10A3</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👨‍🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">GVCN</div>
+                  <div class="meta-value">Cô Diệu Linh</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👥</div>
+                <div class="meta-content">
+                  <div class="meta-label">Sĩ số</div>
+                  <div class="meta-value">40</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">Phòng</div>
+                  <div class="meta-value">C.003</div>
+                </div>
+              </div>
+            </div>
+            <div class="timetable-container">
+              <div class="timetable-header">
+                <h3 class="timetable-title">📋 Thời Khóa Biểu Lớp 10A3</h3>
+              </div>
+              <div class="timetable-wrapper">
+                <table class="timetable">
+                  <thead>
+                    <tr>
+                      <th class="th-period">Tiết</th>
+                      <th class="th-day">Thứ Hai</th>
+                      <th class="th-day">Thứ Ba</th>
+                      <th class="th-day">Thứ Tư</th>
+                      <th class="th-day">Thứ Năm</th>
+                      <th class="th-day">Thứ Sáu</th>
+                      <th class="th-day">Thứ Bảy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">1</div>
+                        <div class="period-time">7:00-7:45</div>
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />C.003
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />C.003
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />C.003
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-history">
+                        Lịch Sử<br />Thầy Hoàng Bách<br />C.003
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">2</div>
+                        <div class="period-time">7:50-8:35</div>
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />C.003
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />C.003
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />C.003
+                      </td>
+                      <td class="td-subject subject-biology">
+                        Sinh Học<br />Cô Diệu Linh<br />P.Sinh 1
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-geography">
+                        Địa Lý<br />Cô Thu Thảo<br />C.003
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">3</div>
+                        <div class="period-time">8:40-9:25</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />C.003
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />C.003
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />C.003
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />C.003
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr class="break-row">
+                      <td class="td-period">☕</td>
+                      <td colspan="6" class="td-break">
+                        <div class="break-text">GIẢI LAO (9:25 - 9:40)</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">4</div>
+                        <div class="period-time">9:40-10:25</div>
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Quỳnh Giao<br />C.003
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Bích Trâm<br />P.Hóa 1
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />C.003
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />C.003
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">5</div>
+                        <div class="period-time">10:30-11:15</div>
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 1
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Mai Lan<br />C.003
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Quốc Tuấn<br />C.003
+                      </td>
+                      <td class="td-subject subject-gdcd">
+                        GDCD<br />Thầy Bảo An<br />C.003
+                      </td>
+                      <td class="td-subject subject-biology">
+                        Sinh Học<br />Cô Diệu Linh<br />P.Sinh 1
+                      </td>
+                      <td class="td-subject subject-class">
+                        Sinh Hoạt Lớp<br />Cô Diệu Linh<br />C.003
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="timetable-section">
+            <div class="schedule-meta">
+              <div class="meta-card">
+                <div class="meta-icon">📚</div>
+                <div class="meta-content">
+                  <div class="meta-label">Lớp</div>
+                  <div class="meta-value">10A4</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👨‍🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">GVCN</div>
+                  <div class="meta-value">Cô Thu Thảo</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">👥</div>
+                <div class="meta-content">
+                  <div class="meta-label">Sĩ số</div>
+                  <div class="meta-value">42</div>
+                </div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-icon">🏫</div>
+                <div class="meta-content">
+                  <div class="meta-label">Phòng</div>
+                  <div class="meta-value">C.004</div>
+                </div>
+              </div>
+            </div>
+            <div class="timetable-container">
+              <div class="timetable-header">
+                <h3 class="timetable-title">📋 Thời Khóa Biểu Lớp 10A4</h3>
+              </div>
+              <div class="timetable-wrapper">
+                <table class="timetable">
+                  <thead>
+                    <tr>
+                      <th class="th-period">Tiết</th>
+                      <th class="th-day">Thứ Hai</th>
+                      <th class="th-day">Thứ Ba</th>
+                      <th class="th-day">Thứ Tư</th>
+                      <th class="th-day">Thứ Năm</th>
+                      <th class="th-day">Thứ Sáu</th>
+                      <th class="th-day">Thứ Bảy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">1</div>
+                        <div class="period-time">7:00-7:45</div>
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />C.004
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Ngọc Diệp<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />C.004
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />C.004
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-geography">
+                        Địa Lý<br />Cô Thu Thảo<br />C.004
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">2</div>
+                        <div class="period-time">7:50-8:35</div>
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />C.004
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Ngọc Diệp<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />C.004
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />C.004
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-history">
+                        Lịch Sử<br />Thầy Hoàng Bách<br />C.004
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">3</div>
+                        <div class="period-time">8:40-9:25</div>
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />C.004
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />C.004
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />C.004
+                      </td>
+                      <td class="td-subject subject-biology">
+                        Sinh Học<br />Cô Diệu Linh<br />P.Sinh 2
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr class="break-row">
+                      <td class="td-period">☕</td>
+                      <td colspan="6" class="td-break">
+                        <div class="break-text">GIẢI LAO (9:25 - 9:40)</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">4</div>
+                        <div class="period-time">9:40-10:25</div>
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />C.004
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />C.004
+                      </td>
+                      <td class="td-subject subject-chemistry">
+                        Hóa Học<br />Cô Ngọc Diệp<br />P.Hóa 2
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />C.004
+                      </td>
+                      <td class="td-subject subject-english">
+                        Tiếng Anh<br />Cô Thanh Hà<br />C.004
+                      </td>
+                      <td class="td-subject subject-pe">
+                        Thể Dục<br />Thầy Đức Trí<br />Sân TD
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-period">
+                        <div class="period-number">5</div>
+                        <div class="period-time">10:30-11:15</div>
+                      </td>
+                      <td class="td-subject subject-literature">
+                        Ngữ Văn<br />Cô Trúc Quỳnh<br />C.004
+                      </td>
+                      <td class="td-subject subject-physics">
+                        Vật Lý<br />Thầy Minh Hải<br />P.Lý 2
+                      </td>
+                      <td class="td-subject subject-math">
+                        Toán<br />Thầy Nam Phong<br />C.004
+                      </td>
+                      <td class="td-subject subject-gdcd">
+                        GDCD<br />Thầy Bảo An<br />C.004
+                      </td>
+                      <td class="td-subject subject-geography">
+                        Địa Lý<br />Cô Thu Thảo<br />C.004
+                      </td>
+                      <td class="td-subject subject-class">
+                        Sinh Hoạt Lớp<br />Cô Thu Thảo<br />C.004
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
           <section class="legend-section">
             <h3 class="legend-title">🎨 Chú Thích Màu Sắc</h3>
             <div class="legend-grid">
@@ -513,32 +2401,31 @@
             </div>
           </section>
 
-          <!-- Notes -->
           <section class="notes-section">
             <h3 class="notes-title">📝 Lưu Ý</h3>
             <div class="notes-content">
               <div class="note-item">
-                <span class="note-icon">⚠️</span>
-                <span class="note-text"
+                <span class="note-icon">⚠️</span
+                ><span class="note-text"
                   >Học sinh phải có mặt đúng giờ trước mỗi tiết học</span
                 >
               </div>
               <div class="note-item">
-                <span class="note-icon">📚</span>
-                <span class="note-text"
+                <span class="note-icon">📚</span
+                ><span class="note-text"
                   >Chuẩn bị đầy đủ sách vở, dụng cụ học tập</span
                 >
               </div>
               <div class="note-item">
-                <span class="note-icon">🔔</span>
-                <span class="note-text"
+                <span class="note-icon">🔔</span
+                ><span class="note-text"
                   >Thời khóa biểu có thể thay đổi, theo dõi thông báo của
                   trường</span
                 >
               </div>
               <div class="note-item">
-                <span class="note-icon">💼</span>
-                <span class="note-text"
+                <span class="note-icon">💼</span
+                ><span class="note-text"
                   >Liên hệ GVCN nếu có thắc mắc về TKB</span
                 >
               </div>
@@ -547,7 +2434,7 @@
         </div>
       </main>
 
-       <!-- Footer -->
+      <!-- Footer -->
       <footer class="footer">
         <div class="footer__gradient">
           <div class="container">
@@ -561,66 +2448,7 @@
                   📍 Phường Điện Nam Trung, Thị xã Điện Bàn, Tỉnh Quảng Nam
                 </div>
                 <div class="footer__social">
-                  <a href="#" class="social-link">📘 Facebook</a>
-                </div>
-              </div>
-              <div class="footer__links">
-                <div class="footer__column">
-                  <h4>Liên kết nhanh</h4>
-                  <ul>
-                    <li><a href="Gioithieu.html">Giới thiệu</a></li>
-                    <li><a href="Tuyensinh.html">Tuyển sinh</a></li>
-                    <li><a href="Tintuc.html">Tin tức</a></li>
-                    <li><a href="Lienhe.html">Liên hệ</a></li>
-                  </ul>
-                </div>
-                <div class="footer__column">
-                  <h4>Hỗ trợ</h4>
-                  <ul>
-                    <li><a href="#">Câu hỏi thường gặp</a></li>
-                    <li><a href="#">Hướng dẫn</a></li>
-                    <li><a href="Gopy.html">Góp ý</a></li>
-                    <li><a href="#">Báo lỗi</a></li>
-                  </ul>
-                </div>
-                <div class="footer__column">
-                  <h4>Liên hệ</h4>
-                  <ul>
-                    <li><a href="tel:0935308369">📞 0935.308.369</a></li>
-                    <li>
-                      <a href="mailto:levanngat@gmail.com"
-                        >📧 levanngat@gmail.com</a
-                      >
-                    </li>
-                    <li>🕒 7:00 - 17:00</li>
-                    <li>📅 Thứ 2 - Thứ 7</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="footer__bottom">
-              <p>
-                &copy; 2025 Trường THPT Lương Thế Vinh. Tất cả quyền được bảo
-                lưu.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer> <!-- Footer -->
-      <footer class="footer">
-        <div class="footer__gradient">
-          <div class="container">
-            <div class="footer__content">
-              <div class="footer__info">
-                <h3 class="footer__title">THPT Lương Thế Vinh</h3>
-                <p class="footer__desc">
-                  Ngôi trường của tri thức và tương lai
-                </p>
-                <div class="footer__address">
-                  📍 Phường Điện Nam Trung, Thị xã Điện Bàn, Tỉnh Quảng Nam
-                </div>
-                <div class="footer__social">
-                   <a
+                  <a
                     href="https://www.facebook.com/groups/ltvpro"
                     target="_blank"
                     class="social-link"
@@ -633,18 +2461,14 @@
                   <h4>Liên kết nhanh</h4>
                   <ul>
                     <li><a href="Gioithieu.html">Giới thiệu</a></li>
-                    <li><a href="Tuyensinh.html">Tuyển sinh</a></li>
                     <li><a href="Tintuc.html">Tin tức</a></li>
-                    <li><a href="Lienhe.html">Liên hệ</a></li>
                   </ul>
                 </div>
                 <div class="footer__column">
                   <h4>Hỗ trợ</h4>
                   <ul>
-                    <li><a href="#">Câu hỏi thường gặp</a></li>
-                    <li><a href="#">Hướng dẫn</a></li>
+                    <li><a href="Lienhe.html">Liên hệ</a></li>
                     <li><a href="Gopy.html">Góp ý</a></li>
-                    <li><a href="#">Báo lỗi</a></li>
                   </ul>
                 </div>
                 <div class="footer__column">
@@ -672,246 +2496,37 @@
         </div>
       </footer>
 
+      <!-- Floating Action Button -->
       <div class="fab-container">
         <div class="fab fab--main">💬</div>
         <div class="fab-menu">
           <a href="tel:0935308369" class="fab fab--phone">📞</a>
-          <a href="#" class="fab fab--facebook">📘</a>
+          <a
+            href="https://www.facebook.com/groups/ltvpro"
+            class="fab fab--facebook"
+            target="_blank"
+            >📘</a
+          >
           <a href="mailto:levanngat@gmail.com" class="fab fab--email">✉️</a>
           <a href="#top" class="fab fab--top">⬆️</a>
         </div>
       </div>
     </div>
 
-        <script>
-      // Data mẫu cho thời khóa biểu các lớp
-      const scheduleData = {
-        '10A1': {
-          gvcn: 'Cô Phạm Thị X',
-          siSo: 42,
-          schedule: [
-            ['Toán', 'Toán', 'Văn', 'Anh', 'Lý', 'Sử'],
-            ['Toán', 'Lý', 'Văn', 'Anh', 'Hóa', 'Địa'],
-            ['Anh', 'Toán', 'Lý', 'Toán', 'Văn', 'TD'],
-            ['Văn', 'Hóa', 'Anh', 'Sinh', 'Toán', 'TD'],
-            ['Lý', 'Anh', 'Toán', 'GDCD', 'Lý', 'SHL']
-          ]
-        },
-        '10A2': {
-          gvcn: 'Thầy Lê Văn Y',
-          siSo: 43,
-          schedule: [
-            ['Văn', 'Toán', 'Anh', 'Lý', 'Hóa', 'Địa'],
-            ['Toán', 'Văn', 'Lý', 'Anh', 'Sinh', 'Sử'],
-            ['Anh', 'Toán', 'Hóa', 'Văn', 'Lý', 'TD'],
-            ['Lý', 'Anh', 'Toán', 'Địa', 'Văn', 'TD'],
-            ['Toán', 'Lý', 'Anh', 'GDCD', 'Hóa', 'SHL']
-          ]
-        },
-        '11A1': {
-          gvcn: 'Cô Trần Thị Z',
-          siSo: 44,
-          schedule: [
-            ['Toán', 'Lý', 'Văn', 'Anh', 'Hóa', 'Sử'],
-            ['Lý', 'Toán', 'Anh', 'Văn', 'Sinh', 'Địa'],
-            ['Anh', 'Toán', 'Lý', 'Hóa', 'Văn', 'TD'],
-            ['Văn', 'Hóa', 'Toán', 'Anh', 'Lý', 'TD'],
-            ['Lý', 'Văn', 'Toán', 'GDCD', 'Anh', 'SHL']
-          ]
-        },
-        '11A2': {
-          gvcn: 'Thầy Hoàng Văn K',
-          siSo: 45,
-          schedule: [
-            ['Văn', 'Toán', 'Lý', 'Anh', 'Hóa', 'Địa'],
-            ['Toán', 'Lý', 'Văn', 'Anh', 'Sinh', 'Sử'],
-            ['Anh', 'Toán', 'Hóa', 'Lý', 'Văn', 'TD'],
-            ['Lý', 'Anh', 'Toán', 'Văn', 'Địa', 'TD'],
-            ['Toán', 'Lý', 'Anh', 'GDCD', 'Văn', 'SHL']
-          ]
-        },
-        '12A1': {
-          gvcn: 'Cô Nguyễn Thị A',
-          siSo: 45,
-          schedule: [
-            ['Toán', 'Lý', 'Anh', 'Văn', 'Hóa', 'Sử'],
-            ['Lý', 'Toán', 'Văn', 'Anh', 'Hóa', 'Địa'],
-            ['Anh', 'Toán', 'Lý', 'Văn', 'Hóa', 'TD'],
-            ['Văn', 'Hóa', 'Anh', 'Sinh', 'Toán', 'TD'],
-            ['Lý', 'Anh', 'Toán', 'GDCD', 'Lý', 'SHL']
-          ]
-        },
-        '12A2': {
-          gvcn: 'Thầy Võ Văn M',
-          siSo: 46,
-          schedule: [
-            ['Văn', 'Toán', 'Lý', 'Anh', 'Hóa', 'Địa'],
-            ['Toán', 'Văn', 'Anh', 'Lý', 'Sinh', 'Sử'],
-            ['Anh', 'Toán', 'Văn', 'Lý', 'Hóa', 'TD'],
-            ['Lý', 'Văn', 'Toán', 'Anh', 'Địa', 'TD'],
-            ['Toán', 'Anh', 'Lý', 'GDCD', 'Văn', 'SHL']
-          ]
-        },
-        '12A3': {
-          gvcn: 'Cô Đặng Thị N',
-          siSo: 44,
-          schedule: [
-            ['Toán', 'Anh', 'Văn', 'Lý', 'Hóa', 'Sử'],
-            ['Văn', 'Toán', 'Lý', 'Anh', 'Sinh', 'Địa'],
-            ['Anh', 'Toán', 'Hóa', 'Văn', 'Lý', 'TD'],
-            ['Văn', 'Lý', 'Toán', 'Anh', 'Hóa', 'TD'],
-            ['Toán', 'Văn', 'Anh', 'GDCD', 'Lý', 'SHL']
-          ]
-        },
-        '12A4': {
-          gvcn: 'Thầy Bùi Văn P',
-          siSo: 43,
-          schedule: [
-            ['Văn', 'Toán', 'Anh', 'Lý', 'Hóa', 'Địa'],
-            ['Toán', 'Lý', 'Văn', 'Anh', 'Sinh', 'Sử'],
-            ['Anh', 'Văn', 'Toán', 'Lý', 'Hóa', 'TD'],
-            ['Lý', 'Toán', 'Anh', 'Văn', 'Địa', 'TD'],
-            ['Toán', 'Anh', 'Lý', 'GDCD', 'Văn', 'SHL']
-          ]
-        },
-        '12A5': {
-          gvcn: 'Cô Lý Thị Q',
-          siSo: 42,
-          schedule: [
-            ['Toán', 'Văn', 'Lý', 'Anh', 'Hóa', 'Sử'],
-            ['Lý', 'Toán', 'Anh', 'Văn', 'Sinh', 'Địa'],
-            ['Anh', 'Toán', 'Văn', 'Lý', 'Hóa', 'TD'],
-            ['Văn', 'Lý', 'Anh', 'Toán', 'Sinh', 'TD'],
-            ['Toán', 'Văn', 'Lý', 'GDCD', 'Anh', 'SHL']
-          ]
-        }
-      };
-
-      // Mapping tên môn học với tên giáo viên (mẫu)
-      const teacherMap = {
-        'Toán': 'Thầy Nguyễn Văn B',
-        'Lý': 'Thầy Trần Văn C',
-        'Hóa': 'Cô Lê Thị F',
-        'Sinh': 'Cô Lý Thị K',
-        'Văn': 'Cô Hoàng Thị D',
-        'Anh': 'Cô Phạm Thị E',
-        'Sử': 'Thầy Võ Văn G',
-        'Địa': 'Cô Đặng Thị H',
-        'TD': 'Thầy Trương Văn I',
-        'GDCD': 'Thầy Bùi Văn L',
-        'SHL': 'GVCN'
-      };
-
-      // Mapping phòng học
-      const roomMap = {
-        'Toán': 'P.201',
-        'Lý': 'P.301',
-        'Hóa': 'P.302',
-        'Sinh': 'P.303',
-        'Văn': 'P.201',
-        'Anh': 'P.201',
-        'Sử': 'P.201',
-        'Địa': 'P.201',
-        'TD': 'Sân TD',
-        'GDCD': 'P.201',
-        'SHL': 'P.201'
-      };
-
-      // Mapping class CSS cho từng môn
-      const subjectClassMap = {
-        'Toán': 'subject-math',
-        'Lý': 'subject-physics',
-        'Hóa': 'subject-chemistry',
-        'Sinh': 'subject-biology',
-        'Văn': 'subject-literature',
-        'Anh': 'subject-english',
-        'Sử': 'subject-history',
-        'Địa': 'subject-geography',
-        'TD': 'subject-pe',
-        'GDCD': 'subject-gdcd',
-        'SHL': 'subject-class'
-      };
-
-      // Cập nhật danh sách lớp khi chọn khối
-      const gradeSelect = document.getElementById('gradeSelect');
-      const classSelect = document.getElementById('classSelect');
-      const btnView = document.querySelector('.btn-view');
-
-      gradeSelect.addEventListener('change', function() {
-        const grade = this.value;
-        classSelect.innerHTML = '';
-        
-        // Tạo danh sách lớp theo khối
-        for (let i = 1; i <= 5; i++) {
-          const option = document.createElement('option');
-          option.value = `${grade}A${i}`;
-          option.textContent = `${grade}A${i}`;
-          classSelect.appendChild(option);
-        }
-        
-        classSelect.value = `${grade}A1`;
-      });
-
-      // Hàm cập nhật thời khóa biểu
-      function updateSchedule(className) {
-        const data = scheduleData[className];
-        
-        if (!data) {
-          alert('Chưa có dữ liệu cho lớp này!');
-          return;
-        }
-
-        // Cập nhật thông tin lớp
-        document.querySelector('.meta-value').textContent = className;
-        document.querySelectorAll('.meta-value')[1].textContent = data.gvcn;
-        document.querySelectorAll('.meta-value')[3].textContent = `${data.siSo} học sinh`;
-        
-        // Cập nhật tiêu đề bảng
-        document.querySelector('.timetable-title').textContent = `📋 Thời Khóa Biểu Lớp ${className}`;
-
-        // Cập nhật các ô môn học
-        const rows = document.querySelectorAll('.timetable tbody tr:not(.break-row)');
-        
-        data.schedule.forEach((period, periodIndex) => {
-          const row = rows[periodIndex >= 3 ? periodIndex + 1 : periodIndex]; // +1 sau break
-          const cells = row.querySelectorAll('.td-subject');
-          
-          period.forEach((subject, dayIndex) => {
-            const cell = cells[dayIndex];
-            const subjectName = cell.querySelector('.subject-name');
-            const subjectTeacher = cell.querySelector('.subject-teacher');
-            const subjectRoom = cell.querySelector('.subject-room');
-            
-            // Xóa tất cả class cũ
-            cell.className = 'td-subject';
-            
-            // Thêm class mới
-            cell.classList.add(subjectClassMap[subject] || 'subject-class');
-            
-            // Cập nhật nội dung
-            subjectName.textContent = subject;
-            subjectTeacher.textContent = teacherMap[subject] || 'Giáo viên';
-            subjectRoom.textContent = roomMap[subject] || 'P.201';
-          });
-        });
-
-        // Scroll to table
-        document.querySelector('.timetable-section').scrollIntoView({ 
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-
-      // Sự kiện click nút xem
-      btnView.addEventListener('click', function() {
-        const className = classSelect.value;
-        updateSchedule(className);
-      });
-
-      // Load TKB ban đầu cho 12A1
-      updateSchedule('12A1');
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/68f125934a9fa0194e5f314c/1j7mvliun";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
     </script>
-  </body>
-</html>
+    <!--End of Tawk.to Script-->
   </body>
 </html>

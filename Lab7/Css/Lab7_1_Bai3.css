@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --background-dark: #050816;
+  --primary-glow: #00c6ff;
+  --secondary-glow: #0072ff;
+  --text-primary: #f1f1f1;
+  --text-secondary: #a7a9be;
+  --border-color: rgba(0, 198, 255, 0.2);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ngăn các hiệu ứng tràn ra ngoài */
+  position: relative;
+}
+
+/* --- Hiệu ứng lưới tĩnh trên nền --- */
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(to right, rgba(0, 198, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 198, 255, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: pan-grid 60s linear infinite;
+  z-index: 0;
+}
+
+@keyframes pan-grid {
+  0% { background-position: 0 0; }
+  100% { background-position: 400px 400px; }
+}
+
+/* --- Container chính, nằm trên lớp hiệu ứng --- */
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* --- Tiêu đề & Mô tả --- */
+.page-header {
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  background: linear-gradient(90deg, var(--primary-glow), var(--text-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* --- Khung chứa bình luận --- */
+.comment-box {
+  background: rgba(10, 15, 35, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 198, 255, 0.15);
+  animation: fadeInUp 1.2s ease-out;
+  position: relative; /* Dùng cho hiệu ứng viền sáng */
+}
+
+/* --- Hiệu ứng viền sáng --- */
+.comment-box::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin: -1px; /* Lớn hơn viền 1px */
+  border-radius: inherit; /* Cùng bo góc */
+  background: linear-gradient(135deg, var(--secondary-glow), var(--primary-glow));
+  filter: blur(5px);
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.comment-box:hover::before {
+  opacity: 1;
+}
+
+/* --- Animations --- */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
